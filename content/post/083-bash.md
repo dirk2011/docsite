@@ -1,5 +1,5 @@
 +++
-date = "2016-07-28T13:00:00+02:00"
+date = "2016-07-28T00:00:00+02:00"
 draft = false
 title = "083 - .bashrc"
 tags = ['raspberry', 'linux', '.bashrc']
