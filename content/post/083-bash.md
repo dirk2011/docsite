@@ -1,11 +1,11 @@
 +++
 date = "2016-07-28T00:00:00+02:00"
 draft = false
-title = "083 - .bashrc"
-tags = ['raspberry', 'linux', '.bashrc']
+title = "083 - .bashrc en bash"
+tags = ['raspberry', 'linux', '.bashrc', 'bash']
 +++
 
-# .bashrc
+# .bashrc en bash
 
 
 | Document info       |                   |
@@ -50,7 +50,7 @@ export VISUAL="vi"
 ```bash
 # history configuratie
 export HISTCONTROL=ignoreboth
-export HISTIGNORE=ls:ll:df:history
+export HISTIGNORE=ls:ll:df:history:gs:gl
 ```
 
 
@@ -69,6 +69,16 @@ of met
 ```bash
 ~/.bashrc
 ```
+
+
+## Werken met history
+Wat opmerkingen over het werken met history op de bash prompt.
+
+* Type `history` om alle ingevoerde commando's terug te zien.
+* `!715` voert regel 715 opnieuw uit.
+* Met `ctrl-r` kan gezocht worden in de history. Handig om ingewikkelde, enige tijd terug uitgevoerde commando's, terug te
+vinden.
+* Indien de regel met een spatie begint wordt de regel niet toegevoegd aan de history.
 
 
 ![linux](/img/logo_linux.jpg)

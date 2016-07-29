@@ -8,5 +8,6 @@ themes/
 # ignore deze bestanden
 #
 mijndomein.sh
+*.swp
 
 
