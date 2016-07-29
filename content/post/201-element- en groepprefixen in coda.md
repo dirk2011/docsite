@@ -110,6 +110,10 @@ groepprefix en de laatste kolom het aantal groepen. Uit het overzicht blijkt het
 hieraan ook 1555 BTW* codes gekoppeld zijn, en dus waarschijnlijk ieder element voorzien is van een BTW groep.
 
 
+## Coda 12
+Functies een tijdje terug gebouwd, scripts werken echter nog steeds in Coda 12.
+
+
 ## Gebruiksvoorwaarden
 
 Deze software mag gratis gebruikt worden, maar het gebruik is geheel voor eigen risico. Deze software mag worden

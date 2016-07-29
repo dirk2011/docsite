@@ -144,7 +144,7 @@ over 3 verschillende bedrijven heen.
 
 
 ## Coda 12
-Scripts een tijdje terug gebouwd, scripts werken echter nog steeds in Coda 12 met onze inrichting.
+Scripts een tijdje terug gebouwd, scripts werken echter nog steeds in Coda 12.
 
 
 ## Gebruiksvoorwaarden
