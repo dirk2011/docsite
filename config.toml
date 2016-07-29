@@ -1,5 +1,5 @@
 
-# baseurl = "http://rasp166/"
+baseurl = "http://rasp164"
 languageCode = "nl"
 title = "mijn aantekeningen . . . "
 copyright = "(c) 2016, dirk postma."
@@ -13,7 +13,7 @@ paginatePath = "page"
 
 [permalinks]
     # post = "/:year/:month/:day/:slug/"
-    post = "/:year/:month/:slug/"
+    post = "/:year/:slug/"
     code = "/:slug/"
 
 [taxonomies]

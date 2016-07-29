@@ -10,9 +10,10 @@ tags = ['raspberry', 'linux', '.bashrc']
 
 | Document info       |                   |
 |---------------------|-------------------|
-| Door                | Dirk Postma       |
-| Laatst bijgewerkt   | 2016-07           |
+| Laatst bijgewerkt   | 2016-07-29        |
 
+
+Onderstaand een aantal van mijn instellingen in .bashrc.
 
 ## aliases
 ```bash
@@ -21,7 +22,7 @@ alias ll='ls -lia'
 
 ## git
 ```bash
-# git
+# git instellingen
 alias gl='echo git log --format="%t, %cD, %s"  -15 ; git log --format="%t, %cD, %s"  -15'
 alias gla='echo git log --format="%t, %cD, %s" ; git log --format="%t, %cD, %s" '
 alias gb='echo git branch -v; git branch -v'
@@ -37,15 +38,17 @@ alias folder='mogrify -resize 500 folder.jpg ; ls -l folder.jpg'
 ```
 
 
-## vim als default editor
+## vim
 ```bash
+# vim als default editor
 export EDITOR="vi"
 export VISUAL="vi"
 ```
 
 
-## history configuratie
+## history
 ```bash
+# history configuratie
 export HISTCONTROL=ignoreboth
 export HISTIGNORE=ls:ll:df:history
 ```
@@ -56,6 +59,17 @@ export HISTIGNORE=ls:ll:df:history
 # start tmux
 tmux attach || tmux
 ```
+
+## reload .bashrc
+Een gewijzigd bestand kan als volgt opnieuw geladen worden.
+```bash
+source ~/.bashrc
+```
+of met 
+```bash
+~/.bashrc
+```
+
 
 ![linux](/img/logo_linux.jpg)
 
