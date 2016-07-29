@@ -1,5 +1,5 @@
 +++
-date = "2010-01-01T00:00:00+02:00"
+date = "2015-03-01T00:00:00+02:00"
 draft = false
 title = "001 - Raspberry, image installeren"
 tags = ['raspberry', 'linux']
@@ -10,12 +10,11 @@ tags = ['raspberry', 'linux']
 
 | Document info       |                   |
 |---------------------|-------------------|
-| Door                | Dirk Postma       |
 | Laatst bijgewerkt   | 2015, 2016-03     |
 
 
 De Raspberry Pi heeft geen hard disk, maar gebruikt een flash geheugen kaartje om al zijn bestanden op te slaan. Een
-geheugen kaartje moet van een linux distributie worden voorzien, daarna  kan de Raspberry computer hiervan op starten.
+geheugen kaartje moet van een distributie worden voorzien, daarna  kan de Raspberry computer hiervan op starten.
 Er zijn verschillende distrubities. Ik gebruik de distributie Raspbian. 
 
 Download de laatste versie van Raspbian hier: https://www.raspberrypi.org/downloads/
@@ -57,4 +56,7 @@ Verwijder het medium, stop het in de raspberry en start de raspberry op.
 
 Referentie:
 http://www.raspberrypi.org/documentation/installation/installing-images/linux.md
+
+
+![linux](/img/logo_linux.jpg)
 
