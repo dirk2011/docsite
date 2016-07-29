@@ -3,6 +3,7 @@ baseurl = "http://rasp164"
 languageCode = "nl"
 title = "mijn aantekeningen . . . "
 copyright = "(c) 2016, dirk postma."
+enableRobotsTXT = "true"
 
 # Theme to use (located in /themes/THEMENAME/)
 theme = "hyde-y"

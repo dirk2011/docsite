@@ -16,3 +16,4 @@ De notities heb ik gemaakt zodat ik een onderwerp niet weer hoef uit te zoeken.
 * plugin/addon voor vim, voor navigeren
 
 ![linux](/img/logo_linux.jpg)
+
