@@ -22,7 +22,51 @@ De website werkt daardoor erg snel, en geen gedoe meer met database, php, etc.
 Het editen van de artikelen kan offline gebeuren m.b.v. een tekst editor.
 
 
-Website
-http://gohugo.io
+## Downloaden voor de raspberry
+Ga naar deze pagina
+https://github.com/spf13/hugo/releases
+download dit bestand
+`hugo_0.16-1_armhf.deb`
+
+
+## Installeren
+```bash
+sudo dpkg -i hugo_0.16-1_armhf.deb
+```
+
+## Website aanmaken
+```bash
+mkdir testsite
+hugo new site testsite
+cd testsite
+```
+
+## hyde-y thema installeren
+```bash
+cd themes
+git clone https://github.com/enten/hyde-y
+```
+
+## eerste posting aanmaken
+```bash
+cd ..
+hugo new post/first.md
+```
+
+## website “uitvoeren/draaien/hosten”
+```bash
+hugo server --buildDrafts --theme=hyde-y --bind=0.0.0.0 -b=http://rasp166:1313
+```
+
+## Enkele andere hugo commands
+```bash
+hugo version
+```
+
+## Websites
+
+* hugo, http://gohugo.io/
+* hugo quickstart, http://gohugo.io/overview/quickstart/
+* hyde-y theme, http://themes.gohugo.io/hyde-y/
 
 
