@@ -1,7 +1,7 @@
 +++
 date = "2011-02-05T00:00:00+02:00"
 draft = false
-title = "103 - Bestandsnamen met vreemde tekens"
+title = "213 - Bestandsnamen met vreemde tekens"
 tags = ['linux']
 +++
 

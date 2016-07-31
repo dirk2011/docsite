@@ -1,7 +1,7 @@
 +++
 date = "2011-01-08T00:00:00+02:00"
 draft = false
-title = "102 - Image Magick"
+title = "212 - Image Magick"
 tags = ['linux', 'image magick']
 +++
 
@@ -54,5 +54,5 @@ aanwezig waardoor je er snel mee aan de slag kunt.
 Website: http://www.imagemagick.org
 
 
-![linux](/img/102-imagemagick-logo.jpg)
+![linux](/img/212-imagemagick-logo.jpg)
 
