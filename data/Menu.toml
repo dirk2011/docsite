@@ -4,3 +4,8 @@
     Title = "Show list of tags"
     URL = "/tags"
 
+[posts]
+    Name = "Posts"
+    Title = "Show list of posts"
+    URL = "/post"
+

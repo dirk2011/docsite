@@ -27,14 +27,15 @@ Autojump is beschikbaar in de programma bibliotheek van debian en ook raspbian.
 sudo apt-get install autojump
 ```
 
-Het wordt pas echt handig nadat de volgende opdracht is opgenomen in .bashrc. 
-Hiermee komt het `j` commando beschikbaar. 
+
+## Configuratie
+In .bashrc. moet het volgende nog worden opgenomen. 
+Hiermee komt het `j` commando beschikbaar (veel korter dan autojump) en wordt de tekst database na iedere cd en autojump bijgewerkt. 
 ```bash
 # autojump laden
 . /usr/share/autojump/autojump.sh
 ```
-
-En daarna .bashrc opnieuw laden, of uitloggen en opnieuw inloggen.
+Vervolgens .bashrc opnieuw laden, of uitloggen en opnieuw inloggen.
 
 
 ## Meer info

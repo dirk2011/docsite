@@ -53,6 +53,12 @@ export HISTCONTROL=ignoreboth
 export HISTIGNORE=ls:ll:df:history:gs:gl
 ```
 
+## autojump
+```bash
+# autojump laden
+. /usr/share/autojump/autojump.sh
+```
+
 
 ## tmux
 ```bash
