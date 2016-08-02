@@ -5,7 +5,7 @@ title = "083 - .bashrc en bash"
 tags = ['raspberry', 'linux', '.bashrc', 'bash']
 +++
 
-# .bashrc en bash
+# .bashrc
 
 
 | Document info       |                   |
@@ -76,6 +76,7 @@ of met
 ~/.bashrc
 ```
 
+# bash
 
 ## Werken met history
 Wat opmerkingen over het werken met history op de bash prompt.

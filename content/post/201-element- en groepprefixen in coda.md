@@ -20,7 +20,7 @@ Bijvoorbeeld:
 
 Prefix           | Toelichting
 ---------------- | ------------------------
-Element DEB123   | element prefix: DEBxxxx
+Element DEB123   | element prefix: DEBxxx
 Groep RL004      | groep prefix: RLxxx
 
 Waarom dit onderscheid? Omdat aan de hand van het element- of groepprefix snel inzicht kan worden gekregen in het
@@ -29,7 +29,7 @@ zijn voorzien. Groepen zijn naast elementen erg belangrijk in het systeem, indie
 zullen financiële rapportages niet volledig zijn. Dus is een periodieke controle hierop noodzakelijk.
 
 
-## De oracle functies
+## De Oracle functies
 
 Het strippen van cijfers uit een elementcode en groepcode gaat het handigst door hiervoor aparte functies te maken in
 de database. Deze functies kunnen vervolgens gebruikt worden in rapportages.

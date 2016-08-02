@@ -1,11 +1,11 @@
 +++
 date = "2016-07-28T01:00:00+02:00"
 draft = false
-title = "084 - Hugo"
+title = "084 - Hugo, static site generator"
 tags = ['website', 'hugo', 'linux']
 +++
 
-# Hugo
+# Hugo, static site generator
 
 
 | Document info       |                   |
@@ -57,6 +57,10 @@ hugo new post/first.md
 ```bash
 hugo server --buildDrafts --theme=hyde-y --bind=0.0.0.0 -b=http://rasp166:1313
 ```
+
+## favicon
+Plaats in de map `/static` het bestand met als naam: `favicon.png`.
+
 
 ## Enkele andere hugo commands
 ```bash
