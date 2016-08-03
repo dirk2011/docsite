@@ -1,11 +1,13 @@
 +++
 date = "2015-03-01T00:00:00+02:00"
 draft = false
-title = "001 - Raspberry, image installeren"
+title = "001 - Raspberry image installeren"
 tags = ['raspberry', 'linux']
+topics = ['Raspberry']
+
 +++
 
-# Raspberry, image installeren
+# Raspberry image installeren
 
 
 | Document info       |                   |

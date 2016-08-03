@@ -1,16 +1,17 @@
 +++
 date = "2015-03-02T00:00:00+02:00"
 draft = false
-title = "002 - Raspberry, eerste stappen"
+title = "002 - Raspberry eerste stappen"
 tags = ['raspberry', 'linux']
+topics = ['Raspberry']
+
 +++
-# Raspberry, eerste stappen
+# Raspberry eerste stappen
 
 Doc info       | |
 | --- |--- |
- Door | Dirk 
- Eerste versie | 2015-06
-               | 2016-03, 2015-06
+ Eerste versie | 2015-06, 2015-03
+
 
 ## Inleiding
 De eerste keer dat de raspberry gestart worden, moet hieraan een toetsenbord en scherm gekoppeld worden. Zodra ssh is

@@ -1,15 +1,16 @@
 +++
 date = "2015-03-03T00:00:00+02:00"
 draft = false
-title = "003 - Raspberry, vervolg"
+title = "003 - Raspberry vervolg"
 tags = ['raspberry', 'linux']
+topics = ['Raspberry']
+
 +++
 
-# Rasberry, vervolg
+# Rasberry vervolg
 
  Document | |
 --- | ---
- Door | Dirk 
  Bijgewerkt | 2015-08, 2016-03 |
 
 

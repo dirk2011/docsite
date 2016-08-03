@@ -2,7 +2,8 @@
 date = "2012-03-23T00:00:00+02:00"
 draft = false
 title = "202 - Linker- en rechterlijsten kopieren in Coda"
-tags = ['coda', 'sql', 'oracle', 'linux']
+tags = ['coda', 'sql', 'oracle', 'scripts']
+topics = ['Coda'] 
 +++
 
 # Linker- en rechterlijsten kopieren in Coda
@@ -88,7 +89,7 @@ aan elkaar gekoppeld te worden.
 Nu dient aan elk element waarvan de lijst automatisch onderhouden moet worden, een dummy groep gekoppeld te worden.
 Onderstaand een voorbeeld van het element 411010, waaraan o.a. groep D1L001 is gekoppeld.
 
-![Voorbeeld](202-2-coda-lijsten-03-element-en-groepen.jpg)
+![Voorbeeld](/img/202-2-coda-lijsten-03-element-en-groepen.jpg)
 
 
 ## Automatiseren

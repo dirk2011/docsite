@@ -9,3 +9,8 @@
     Title = "Show list of posts"
     URL = "/post"
 
+[topics]
+    Name = "Topics"
+    Title = "Show list of topics"
+    URL = "/topics"
+
