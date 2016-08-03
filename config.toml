@@ -37,6 +37,9 @@ paginatePath = "page"
     topline = "Mijn aantekeningen over computers etc, zodat ik het niet nog een keer hoef uit te zoeken. Site is in aanbouw"
     # footline = "code with <i class='fa fa-heart'></i>"
 
+    # google analytics tracking id
+    googleAnalytics = "UA-20451652-4"
+
 
 # Sidebar position
 # nadat ik deze had aangezet verdween de kop boven de site
