@@ -2,7 +2,7 @@
 date = "2015-03-01T00:00:00+02:00"
 draft = false
 title = "203 - Links en favoriete programma's"
-tags = ['linux']
+tags = ['linux', 'favorites']
 +++
 
 
@@ -17,6 +17,15 @@ tags = ['linux']
 
 * Handige tips voor beginners en gevorderden met linux: 
 https://sites.google.com/site/computertip/
+
+* nixCraft, Linux/Unix voor sysadmins: 
+http://www.cyberciti.biz/faq  en  http://www.cyberciti.biz/
+
+* the Geek Stuff, heel veel tutorials:
+http://www.thegeekstuff.com/
+
+* Website van de makers van de Raspberry Pi:
+https://www.raspberrypi.org
 
 
 ## Favoriete programma's
