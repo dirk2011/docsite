@@ -3,6 +3,7 @@ date = "2013-08-09T00:00:00+02:00"
 draft = false
 title = "204 - Oude kernels opruimen"
 tags = ['ubuntu', 'linux']
+
 +++
 
 # Oude kernels opruimen
