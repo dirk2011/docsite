@@ -27,6 +27,12 @@ http://www.thegeekstuff.com/
 * Website van de makers van de Raspberry Pi:
 https://www.raspberrypi.org
 
+* Tecmint, Linux Howtos, Tutorials & Guides:
+http://www.tecmint.com/
+
+* TuxDiary, Linux, open source, command-line, leisure:
+https://tuxdiary.com/
+
 
 ## Favoriete programma's
 
