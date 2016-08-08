@@ -12,8 +12,7 @@ tags = ['linux', 'favorites']
 | Laatst bijgewerkt   | 2013-08           |
 
 
-## Een aantal links, naar handige websites.
-
+# Een aantal links, naar handige websites.
 
 * Handige tips voor beginners en gevorderden met linux: 
 https://sites.google.com/site/computertip/
@@ -34,7 +33,11 @@ http://www.tecmint.com/
 https://tuxdiary.com/
 
 
-## Favoriete programma's
+* Markdown Cheatsheet: 
+https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet
+
+
+# Favoriete programma's
 
 ### Soundconverter
 Voor het converteren van audiobestanden naar mp3 is in Ubuntu een prima programma beschikbaar dat zijn werk snel en
