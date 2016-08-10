@@ -2,7 +2,7 @@
 date = "2016-07-28T00:00:00+02:00"
 draft = false
 title = "083 - .bashrc en bash"
-tags = ['raspberry', 'linux', '.bashrc', 'bash']
+tags = ['raspberry', 'linux', '.bashrc', 'bash', 'image magick']
 +++
 
 # .bashrc
@@ -29,7 +29,7 @@ alias gb='echo git branch -v; git branch -v'
 alias gs='echo git status; git status'
 ```
 
-## plaatjes bewerken
+## plaatjes bewerken met Image Magick
 ```bash
 # png en bmp omzetten naar jpg
 alias tojpg='mogrify -format jpg *.png *.bmp'
