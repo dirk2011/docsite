@@ -1,7 +1,7 @@
 +++
 date = "2016-08-10T00:00:00+02:00"
 draft = false
-title = "090 - Markdown zandbak"
+title = "090 - Markdown"
 tags = ['markdown', 'linux', 'hugo']
 +++
 
