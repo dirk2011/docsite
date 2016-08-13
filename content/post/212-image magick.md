@@ -13,15 +13,17 @@ tags = ['linux', 'image magick']
 | Laatst bijgewerkt   | 2011-01           |
 
 
-ImageMagick is een erg goed en al lang bestaand programma om vanaf een command prompt, of met een script of batch
-bestand, plaatjes te bewerken. Het programma is beschikbaar voor zowel windows als linux.
+ImageMagick is een erg goed en al lang bestaand programma om vanaf een command
+prompt, of met een script of batch bestand, plaatjes te bewerken. Het programma
+is beschikbaar voor zowel windows als linux.
 
 Het verkleinen van 1 afbeelding gaat bijvoorbeeld als volgt:
 ```bash
 convert foto.jpg -resize 500 kleiner.jpg
 ```
 
-Het aanpassen van een directory met plaatjes gaat bijvoorbeeld als volgt (linux scriptje):
+Het aanpassen van een directory met plaatjes gaat bijvoorbeeld als volgt (linux
+scriptje):
 ```bash
 ################################################################################
 # file: verkleinen.sh
@@ -48,8 +50,9 @@ done
 # eof #
 ```
 
-Maar het programma kan nog veel meer dan alleen maar afbeeldingen verkleinen. Er is goeie en uitgebreide documentatie
-aanwezig waardoor je er snel mee aan de slag kunt.
+Maar het programma kan nog veel meer dan alleen maar afbeeldingen verkleinen. Er
+is goeie en uitgebreide documentatie aanwezig waardoor je er snel mee aan de
+slag kunt.
 
 Website: http://www.imagemagick.org
 

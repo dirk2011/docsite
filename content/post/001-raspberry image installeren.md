@@ -15,9 +15,10 @@ topics = ['Raspberry']
 | Laatst bijgewerkt   | 2015, 2016-03     |
 
 
-De Raspberry Pi heeft geen hard disk, maar gebruikt een flash geheugen kaartje om al zijn bestanden op te slaan. Een
-geheugen kaartje moet van een distributie worden voorzien, daarna  kan de Raspberry computer hiervan op starten.
-Er zijn verschillende distrubities. Ik gebruik de distributie Raspbian. 
+De Raspberry Pi heeft geen hard disk, maar gebruikt een flash geheugen kaartje
+om al zijn bestanden op te slaan. Een geheugen kaartje moet van een distributie
+worden voorzien, daarna  kan de Raspberry computer hiervan op starten.  Er zijn
+verschillende distrubities. Ik gebruik de distributie Raspbian. 
 
 Download de laatste versie van Raspbian hier: https://www.raspberrypi.org/downloads/
 
