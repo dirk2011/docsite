@@ -1,7 +1,7 @@
 +++
 date = "2013-05-01T00:00:00+02:00"
 draft = false
-title = "214 - IBAN controle met Oracle functie"
+title = "214 - IBAN controle met een Oracle functie"
 tags = ['coda', 'sql', 'oracle', 'rapportages', 'iban']
 topics = ['Coda']
 +++
@@ -81,7 +81,7 @@ lijstje te maken van IBAN nummers en het resultaat van de functie.
 * Wikipedia,
 Formule voor het berekenen van  controle getal in het IBAN nummer.
 http://en.wikipedia.org/wiki/International_Bank_Account_Number
-* Nordea
+* Nordea,
 Lengte IBAN nummer per land.
 http://www.nordea.com/Our+services/International+products+and+services/Cash+Management/IBAN+countries/908462.html
 

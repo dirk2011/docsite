@@ -2,7 +2,7 @@
 date = "2016-07-28T01:00:00+02:00"
 draft = false
 title = "084 - Hugo, static site generator"
-tags = ['website', 'hugo', 'linux']
+tags = ['website', 'hugo', 'linux', 'markdown']
 +++
 
 # Hugo, static site generator
@@ -14,12 +14,13 @@ tags = ['website', 'hugo', 'linux']
 
 
 ## Info
-Een programma om een website mee op te zetten. Kan een alternatief zijn voor WordPress.
+Een programma om een website mee op te zetten. Kan een alternatief zijn voor
+WordPress.
 
-De content (artikelen) worden geschreven in markdown (.md) bestanden. 
-Vervolgens wordt een statische website gegenereert.
-De website werkt daardoor erg snel, en geen gedoe meer met database, php, etc. 
-Het editen van de artikelen kan offline gebeuren m.b.v. een tekst editor.
+De content (artikelen) worden geschreven in markdown (.md) bestanden.
+Vervolgens wordt een statische website gegenereert.  De website werkt daardoor
+erg snel, en geen gedoe meer met database, php, etc.  Het editen van de
+artikelen kan offline gebeuren m.b.v. een tekst editor.
 
 
 ## Downloaden voor de raspberry
@@ -47,18 +48,18 @@ cd themes
 git clone https://github.com/enten/hyde-y
 ```
 
-## eerste posting aanmaken
+## Eerste posting aanmaken
 ```bash
 cd ..
 hugo new post/first.md
 ```
 
-## website “uitvoeren/draaien/hosten”
+## Website “uitvoeren/draaien/hosten”
 ```bash
 hugo server --buildDrafts --theme=hyde-y --bind=0.0.0.0 -b=http://rasp166:1313
 ```
 
-## favicon
+## Favicon
 Plaats in de map `/static` het bestand met als naam: `favicon.png`.
 
 
@@ -67,7 +68,7 @@ Plaats in de map `/static` het bestand met als naam: `favicon.png`.
 hugo version
 ```
 
-## Websites
+## Bronnen
 
 * hugo, http://gohugo.io/
 * hugo quickstart, http://gohugo.io/overview/quickstart/

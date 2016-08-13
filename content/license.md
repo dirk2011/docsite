@@ -1,3 +1,5 @@
 
 # Licentie 
 
+https://www.gnu.org/licenses/gpl.html
+

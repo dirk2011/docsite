@@ -6,17 +6,19 @@ tags = ['coda', 'oracle', 'rapportages', 'elfproef']
 topics = ['coda']
 +++
 
-
+# Elfproef
 
 | Document info       |                   |
 |---------------------|-------------------|
 | Laatst bijgewerkt   | 2016-08           |
 
+## Doel
+De elfproef werd gebruikt voor het controleren van onze oude 9 cijferige
+banknummers.  Met een rapportage werd dan periodiek gecontroleerd welke nummers
+fout waren. De door ons gebruikte software controleerde hier niet op bij de
+invoer.
 
-De elfproef werd gebruikt voor het controleren van onze oude 9 cijferige banknummers. 
-Met een rapportage werd dan periodiek gecontroleerd welke nummers fout waren. De door
-ons gebruikte software controleerde hier niet voldoende op bij de invoer.
-
+## Oracle functie
 Onderstaand de oracle functie. 
 
 ```sql
@@ -54,6 +56,7 @@ end ;
 /
 ```
 
+## Gebruik
 Het aanroepen, cq. gebruik van de functie gaat dan als volgt.
 ```sql
 select lee_bankelfproef('123456789') from dual ;
