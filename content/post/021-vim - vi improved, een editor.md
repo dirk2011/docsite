@@ -13,6 +13,7 @@ zit er o.a. in doordat Vim in hoge mate aangepast (geconfigureerd) kan worden
 aan de eigen behoefte.
 
 
+
 ## Installeren
 
 Op de Raspberry staat standaard vim niet geïnstalleerd. Installeren gaat op de
@@ -294,6 +295,28 @@ Opdracht | Verklaring
 :cp      | Spring naar vorige
 
 
+## Sessies
+Vim heeft een oplossing ingebouwd om de gehele sessie op te slaan en te
+restoren. Geopende bestanden en cursor posities worden opgeslagen zodat je een
+volgende keer zo verder kunt waar je gebleven was. 
+
+Opdracht | Verklaring
+-------- | ----------
+:mksession | Huidige sessie opslaan, eventueel kan een bestandsnaam worden opgegeven, indien niet dan doet vim dat.
+:source    | Een sessie herstellen, met een bestandsnaam.
+
+
+Om het werken met sessies te vereenvoudigen, heb ik hiervoor 2 functie toetsen
+geconfigureerd.
+```vim
+map <F2> :mksession! ~/vim_session <cr> " Quick write session with F2
+map <F3> :source ~/vim_session <cr>     " And load session with F3
+```
+
+Bron: http://stackoverflow.com/questions/1416572/vi-vim-restore-opened-files
+
+
+
 
 ## Markdown editing tips
 
@@ -344,7 +367,7 @@ autocmd FileType markdown set foldmethod=syntax
 Bron: http://occasionallycogent.com/post/5222794912/folding-fun-with-vim-and-markdown
 
 Een geweldige tip!
-* * * 
+
 
 
 ## Shell
@@ -365,4 +388,14 @@ Huidige kleurenschema in detail bekijken gaat met commando: `:highlight`.
 De naam van het huidige kleurenschema: `:colorscheme`
 
 
+## vimtutor
+Vim heeft een cursus aan boord, om deze op te starten type: vimtutor op de shell
+prompt.
+
+
+## Bronnen
+
+* http://www.vim.org
+* http://usevim.com
+* http://vim.wikia.com/wiki/Vim_Tips_Wiki
 
