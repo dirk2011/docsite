@@ -178,6 +178,14 @@ En dit is een regel.
 ```
 
 
+* * * 
+## Speciale tekens
+Er zijn een aantal tekens die niet of niet goed worden weergegeven. Deze moeten
+ge-escaped worden met een `\`.
+Bijvoorbeeld het kleiner dan teken, dus omdat weer te geven doe: `\<`, dan is
+het resultaat: \<.
+
+
 * * *
 ## Bronnen
 * https://daringfireball.net/projects/markdown/syntax

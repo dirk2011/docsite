@@ -1,7 +1,7 @@
 +++
 date = "2016-08-13T00:00:00+02:00"
 draft = false
-title = "091 - vim, vi improved, een editor"
+title = "021 - vim, vi improved, een editor"
 tags = ['vim', 'linux', 'markdown']
 topics = ['linux']
 
@@ -127,7 +127,7 @@ Opdracht | Verklaring
 ctrl-e  | Scroll 1 regel naar beneden
 ctrl-y  | scroll 1 regel omhoog
 z, .    | herpositioneer huidige regel in het midden van het scherm
-z, <enter> | herpositioneer huidige regel, op 1e regel in het scherm
+z, \<enter> | herpositioneer huidige regel, op 1e regel in het scherm
 z, –       | herpositioneer huidige regel, op laatste regel in het scherm
 z, z       | herpositioneer huidige regel, in het midden, zelfde kolom!
 
@@ -136,13 +136,13 @@ Opdracht | Verklaring
 ------- | ----------
 G       | Ga naar einde van het bestand
 g, g    | Ga naar begin van het bestand
-[n], G  | Ga naar regel [n]
+\<n>, G  | Ga naar regel \<n>
 
 ### F, zoeken op dezelfde regel
 Opdracht | Verklaring
 ------- | ----------
-f, <c>  | zoek vooruit naar  <c> op huidige regel
-F, <c>  | zoek terug naar <c> op huidige regel
+f, \<c>  | zoek vooruit naar  \<c> op huidige regel
+F, \<c>  | zoek terug naar \<c> op huidige regel
 
 ### Window management
 Een window is wat anders dan een geopend bestand in Vim. Je kunt meerdere
@@ -154,7 +154,7 @@ ctrl w, c | Close huidige window
 ctrl w, v | split window verticaal
 ctrl w, s | split window horizontaal
 ctrl w, o | maak huidige window maximaal
-ctrl w, [m] | maak andere window actief, m = richting
+ctrl w, \<m> | maak andere window actief, m = richting
 
 ### Springen tussen, en van, naar ()[]{}<>
 Met % kan gesprongen worden naar het begin teken.  Indien de cursor staat op
@@ -230,10 +230,24 @@ n, N     | Verder zoeken, N volgende, n vorige
 :noh     | Zet alle “gehighlighte” tekst uit
 
 
+### Tabbladen
+Vim kan met tabbladen werken. In Vim zelf viel de functionaliteit mij hiervan
+tegen. Mogelijk is Gvim hier geschikter voor. 
+De tabbladen opdrachten beginnen met :tab\*, onderstaand een paar.
+
+Opdracht | Verklaring
+-------- | ----------
+:tabnew  | Opent een nieuw tabblad
+:tabc[lose] | Sluit een tabblad, dus niet het bestand!
+
+Opgelet, tabbladen werken anders in vim dan in andere editors. Een tabblad bevat
+één of meerdere windows. Een window bevat een buffer. Een buffer bevat een
+(geopend) bestand :-).
+
+
 
 ## Autocompletion
-Nog een handige functie die ik alweer vergeten was, autocompletion. 
-<ctrl><n>
+Nog een handige functie die ik alweer vergeten was, autocompletion: \<ctrl>\<n>
 
 
 ## Buffers
@@ -241,10 +255,44 @@ In vim worden bestanden worden geladen in buffers. Dus om te switchen tussen
 geopende bestanden, moet je switchen tussen buffers.
 
 Opdracht | Verklaring
-------- | ----------
-:b <tab> | toon volgende geopende bestand, met enter spring je hier naar toe.
+-------- | ----------
+:b \<tab> | toon volgende geopende bestand, met enter spring je hier naar toe.
 
 Er zijn veel commando's voor het werken met buffers.
+
+
+
+## Registers
+Kort en zeker niet volledig.  Registers zijn een soort klemborden. Er zijn named
+en unnamed registers. De informatie van reigsters blijft aanwezig, ook nadat Vim
+wordt afgesloten.
+
+Opdracht | Verklaring
+-------- | ----------
+:reg     |  toon inhoud van alle registers
+:reg a   |  toon de inhoud van register a
+“ap      |  register opdracht, a = te gebruiken register, p = paste
+“ay      |  vul register a
+
+Opgepast alleen `"` typen werkt vaak niet, dus type `" `.
+
+Bronnen
+
+* http://usevim.com/2012/04/13/registers/
+* in vim :help registers
+
+
+
+## Vimgrep, zoeken met de foutbuffer
+Met :vimgrep kan het gehele document worden doorzocht, en het en het zoek
+resultaat in een lijstje worden getoond.
+
+Opdracht | Verklaring
+-------- | ----------
+:vimgrep zoekwaarde %  | Het % teken is verplicht! Het resultaat wordt bewaard in de “error list” van vim, open deze met :copen
+:cn      | Spring naar volgende
+:cp      | Spring naar vorige
+
 
 
 ## Markdown editing tips
@@ -297,5 +345,24 @@ Bron: http://occasionallycogent.com/post/5222794912/folding-fun-with-vim-and-mar
 
 Een geweldige tip!
 * * * 
+
+
+## Shell
+Met de opdracht `:sh` kan vanuit vim een shell worden opstart. Doe ctrl-d om de
+shell te verlaten en terug te keren naar vim.
+Met `:!` kan een shell opdracht worden uitgevoerd en wordt meteen teruggekeerd
+naar vim, bijvoorbeeld:
+```vim
+:!ls
+```
+Met het `%` teken wordt de naam van het huidige bestand doorgegeven, voorbeeld:
+```vim
+:!wc "%"
+```
+
+## Kleuren
+Huidige kleurenschema in detail bekijken gaat met commando: `:highlight`.
+De naam van het huidige kleurenschema: `:colorscheme`
+
 
 
