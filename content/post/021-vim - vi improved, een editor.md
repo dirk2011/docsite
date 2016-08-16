@@ -79,10 +79,9 @@ er een aantal te kennen om lekker met Vim te kunnen werken.
 Onderstaand een aantal welke ik regelmatig gebruik, er zijn er nog veeeeel meer.
 
 
-
 ### Meest gebruikte
 Opdracht | Verklaring
-------- | ----------
+-------- | ----------
 :w     | huidige bestand opslaan
 :q     | afsluiten
 :qa    | alle bestanden sluiten, vim afsluiten
@@ -231,6 +230,25 @@ n, N     | Verder zoeken, N volgende, n vorige
 :noh     | Zet alle “gehighlighte” tekst uit
 
 
+### Folding 
+Met folding kunnen stukken in een document worden worden in- of uitgeklapt.
+Handig om sneller de structuur van een document te doorgronden, om stukken te
+kunnen verbergen die even niet van belang zijn.
+Hoe de folds worden bepaald dat kan weer geconfigureerd worden.
+
+Opdracht | Verklaring
+-------- | ----------
+zi       | Allen in of uitklappen (completely fold/unfold)
+zj       | Spring naar next fold, werkt ook als alles is uitgeklapt
+zk       | Ga naar previous fold, werkt ook als alles is uitgeklapt
+za       | Open of sluit één fold
+zo       | Open een fold
+zc       | Sluit huidige fold, als die gesloten is sluit de parent fold
+
+Meer info: `: help fold-commands`
+
+
+
 ### Tabbladen
 Vim kan met tabbladen werken. In Vim zelf viel de functionaliteit mij hiervan
 tegen. Mogelijk is Gvim hier geschikter voor. 
@@ -246,7 +264,6 @@ Opgelet, tabbladen werken anders in vim dan in andere editors. Een tabblad bevat
 (geopend) bestand :-).
 
 
-
 ## Autocompletion
 Nog een handige functie die ik alweer vergeten was, autocompletion: \<ctrl>\<n>
 
@@ -258,8 +275,18 @@ geopende bestanden, moet je switchen tussen buffers.
 Opdracht | Verklaring
 -------- | ----------
 :b \<tab> | toon volgende geopende bestand, met enter spring je hier naar toe.
+:ls!      | Lijst alle buffers
+:ls       | lijst alle buffers voor geopende bestanden
+:b<nr>    | Switch naar buffer nummer om naar zo'n buffer toe te gaan.
+b: <tab>  | Er kan dan door alle geopende buffers ge-tabt worden.
+:bd <nr>  | buffer delete, de buffer wordt afgesloten, er volgt een waarschuwing als bestand nog niet is opgeslagen <nr> is optioneel, indien niets opgegeven wordt huidige buffer gesloten
 
-Er zijn veel commando's voor het werken met buffers.
+Idee? Maak onderstaande sneltoets aan om eenvoudig te switchen
+```vim
+:nnoremap <F5> :buffers<CR>:buffer<Space>
+```
+
+Er zijn nog veel commando's voor het werken met buffers.
 
 
 
@@ -318,7 +345,48 @@ Bron: http://stackoverflow.com/questions/1416572/vi-vim-restore-opened-files
 
 
 
-## Markdown editing tips
+## Bookmarks
+Met bookmarks kan in vim snel gesprongen worden naar verschillende locaties in
+een document en zelfs naar verschillende documenten.
+
+Opdracht | Verklaring
+-------- | ----------
+m<teken> | Bijvoorbeeld ma, de markering a wordt gemaakt.
+'<teken> | ' gevolgd door een spatie, met teken, keer terug naar de marking
+a-z      | Markeringen in het huidige document, local bookmarks
+A-Z      | Markeringen over verschillende documenten heen, global bookmarks
+:marks   | Overzicht van alle markeringen, er kunnen ook letters worden opgegeven, gescheiden door een spatie
+
+Bron: http://www.thegeekstuff.com/2009/02/how-to-add-bookmarks-inside-vi-and-vim-editor/
+
+
+
+## Shell
+Met de opdracht `:sh` kan vanuit vim een shell worden opstart. Doe ctrl-d om de
+shell te verlaten en terug te keren naar vim.
+Met `:!` kan een shell opdracht worden uitgevoerd en wordt meteen teruggekeerd
+naar vim, bijvoorbeeld:
+```vim
+:!ls
+```
+Met het `%` teken wordt de naam van het huidige bestand doorgegeven, voorbeeld:
+```vim
+:!wc "%"
+```
+
+## Kleuren
+Huidige kleurenschema in detail bekijken gaat met commando: `:highlight`.
+De naam van het huidige kleurenschema: `:colorscheme`
+
+
+## Vimtutor
+Vim heeft een cursus aan boord, om deze op te starten type: vimtutor op de shell
+prompt.
+
+
+## Markdown bestanden
+
+### Markdown editing tips
 
 Progammeren is wat anders dan een tekst schrijven. De regel lengte heb ik daarom
 voor markdown files korter geconfigureerd. Toegevoegd aan `vimrc`:
@@ -338,14 +406,14 @@ aangepast door het eerst te selecteren en vervolgens opnieuw te formateren met
 
 
 
-## Markdown syntax highlighting
+### Markdown syntax highlighting
 Tim Pope heeft een uitstekende plugin gemaakt voor markdown files (.md). Het is
 de moeite om deze toe te voegen aan Vim.
 
 Bron: https://github.com/tpope/vim-markdown
 * * * 
 
-## Folding voor markdown files
+### Folding voor markdown files
 
 Markdown bestanden kunnen erg lang worden, je kunt dan het overzicht kwijt
 raken.  Onderstaande zorgt ervoor dat op de headings `#` eenvoudig folding
@@ -369,33 +437,10 @@ Bron: http://occasionallycogent.com/post/5222794912/folding-fun-with-vim-and-mar
 Een geweldige tip!
 
 
-
-## Shell
-Met de opdracht `:sh` kan vanuit vim een shell worden opstart. Doe ctrl-d om de
-shell te verlaten en terug te keren naar vim.
-Met `:!` kan een shell opdracht worden uitgevoerd en wordt meteen teruggekeerd
-naar vim, bijvoorbeeld:
-```vim
-:!ls
-```
-Met het `%` teken wordt de naam van het huidige bestand doorgegeven, voorbeeld:
-```vim
-:!wc "%"
-```
-
-## Kleuren
-Huidige kleurenschema in detail bekijken gaat met commando: `:highlight`.
-De naam van het huidige kleurenschema: `:colorscheme`
-
-
-## vimtutor
-Vim heeft een cursus aan boord, om deze op te starten type: vimtutor op de shell
-prompt.
-
-
 ## Bronnen
 
 * http://www.vim.org
 * http://usevim.com
 * http://vim.wikia.com/wiki/Vim_Tips_Wiki
+* http://www.thegeekstuff.com/tag/vi-vim-tips-and-tricks/
 
