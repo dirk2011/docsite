@@ -1,15 +1,15 @@
 
-[tags]
+[3]
     Name = "Tags"
     Title = "Show list of tags"
     URL = "/tags"
 
-[posts]
+[2]
     Name = "Posts"
     Title = "Show list of posts"
     URL = "/post"
 
-[topics]
+[1]
     Name = "Topics"
     Title = "Show list of topics"
     URL = "/topics"
