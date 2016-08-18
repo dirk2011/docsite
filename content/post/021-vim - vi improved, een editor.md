@@ -1,8 +1,8 @@
 +++
-date = "2016-08-13T00:00:00+02:00"
+date = "2016-08-17T00:00:00+02:00"
 draft = false
-title = "021 - vim, vi improved, een editor"
-tags = ['vim', 'linux', 'markdown']
+title = "021 - Vim, vi improved, een editor"
+tags = ['vim', 'linux', 'markdown', 'raspberry']
 topics = ['linux']
 
 +++
@@ -10,7 +10,9 @@ topics = ['linux']
 # Vim
 Vim is een editor. Niet eenvoudig om te leren, maar wel erg krachtig. De kracht
 zit er o.a. in doordat Vim in hoge mate aangepast (geconfigureerd) kan worden
-aan de eigen behoefte.
+aan de eigen behoefte.  
+De bediening is wel bijzonder, geen gedoe met menu's of de muis Vim wordt bediend met
+het toetsenbord.
 
 
 
@@ -76,7 +78,7 @@ sudo apt-get install vim-nox
 Vim wordt bediend met het toetsenbord. De functionaliteit is ondergebracht in
 soms één toets maar meestal in meerdere toetscombinaties. Het is van belang om
 er een aantal te kennen om lekker met Vim te kunnen werken.
-Onderstaand een aantal welke ik regelmatig gebruik, er zijn er nog veeeeel meer.
+Onderstaand een aantal welke ik regelmatig gebruik, er zijn er nog veel meer.
 
 
 ### Meest gebruikte
@@ -97,7 +99,7 @@ ctrl-r | Redo
 
 ### Navigeren op teken niveau
 Opdracht | Verklaring
-------- | ----------
+-------- | ----------
 j, k | Naar beneden, omhoog
 h, l | Naar links, rechts.
 Type eventueel eerst een getal en dat de opdracht, om de cursor sneller te
@@ -384,9 +386,143 @@ Vim heeft een cursus aan boord, om deze op te starten type: vimtutor op de shell
 prompt.
 
 
-## Markdown bestanden
+## Plugins
+Plugins maken het werken met Vim een stuk eenvoudiger en productiever.
 
-### Markdown editing tips
+### NERDTree plugin 
+NERDTree, een bestandsverkenner voor Vim.  
+"The NERD tree allows you to explore
+your filesystem and to open files and directories. It presents the filesystem to
+you in the form of a tree which you manipulate with the keyboard and/or mouse.
+It also allows you to perform simple filesystem operations."
+
+Opdracht | Verklaring
+-------- | ----------
+F3        | Open NERDTree
+B         | Open bookmarks
+t         | Open bestand in een nieuwe page-tab
+?         | Help
+:Bookmark | <name> Maak nieuwe bookmark, eventueel met de opgegeven naam
+
+Configuratie `.vimrc`
+```vim
+" NERDTree, file browser
+let NERDTreeShowHidden=1              " toon hidden files en directories
+let NERDTreeIgnore=['\.pyc$', '\~$']  “ toon bepaalde extensies niet
+map <F3> :NERDTreeToggle<CR>          " wijs NERDTree toe aan F3
+```
+
+Bron: https://github.com/scrooloose/nerdtree
+
+
+
+### Jedi-vim plugin
+
+Met deze plugin wordt het programmeren van python een stuk eenvoudiger. Het kan
+o.a. docstrings van objecten tonen, je kunt naar definities springen, en biedt
+autocompletion. 
+
+Opdracht   | Verklaring
+---------- | ----------
+Shift-k    | toon de docstring van het object
+Leader-d   | (leader is meestal \) Ga naar de definition
+Ctrl-o     | Spring terug naar vorig punt
+Ctrl-space | Autocompletion
+Leader-g   | Ga naar de assignments
+Leader-n   | Show all usages of a name
+:Pyimport  | Open python module
+
+Er zijn nog een aantal instellingen voor deze plugin waar ik nog niets meegedaan
+heb. Deze maken het python leven waarschijnlijk nog eenvoudiger :-).
+
+Bron: https://github.com/davidhalter/jedi-vim/blob/master/README.rst
+
+
+### Taglist plugin
+
+Inleiding  
+M.b.v. tags kan handig door een een bestand gesprongen worden en wordt inzicht
+verkregen welke functies, objecten etc. in een bestand gedefinieerd zijn.
+
+Ctags installeren  
+Tags worden gegenereerd en opgeslagen in een bestand. De plugin heeft daarvoor
+een programma nodig, het programma ctags. Installeer dat als volgt.
+```bash
+apt-get install exuberant-ctags
+```
+
+Tags bestand genereren  
+De vim plugin kan on-the-fly de tags genereren maar dat werkt niet indien
+definities staan in andere bestanden. Daarvoor is een bestand nodig waar alle
+tags instaan, generer dat als volgt.
+```bash
+ctags -R *.py
+```
+`-R` betekent verwerk ook subdirectories, \*.py betekent behandel alle python
+bestanden.
+
+Taglist installeren  
+Maak de volgende map aan als dit nog niet bestaat en ga er naar toe.
+```bash
+mkdir -p ~/.vim/bundle && cd ~/.vim/bundle
+```
+Maak een submap aan
+```bash
+mkdir -p && mkdir taglist
+```
+Download taglist en rename het.
+```bash
+wget http://vim.sourceforge.net/scripts/download_script.php?src_id=19574
+mv http://vim.sourceforge.net/scripts/script.php?script_id=273 taglist.zip
+```
+Pak het zip bestand uit.
+
+\.vimrc aanpassen  
+Voeg onderstaand toe aan `.vimrc`. Het wijst de plugin toe aan de functietoets F7.
+Daarnaast worden nog wat instellingen ingesteld.
+```vim
+" Syntax for multiple tag files are
+" set tags=/my/dir1/tags, /my/dir2/tags
+set tags=tags;$HOME/.vim/tags/
+
+" TagList Plugin Configuration
+let Tlist_Ctags_Cmd='/usr/bin/ctags'
+let Tlist_GainFocus_On_ToggleOpen = 1
+let Tlist_Close_On_Select = 1
+let Tlist_Use_Right_Window = 1
+let Tlist_File_Fold_Auto_Close = 1
+map <F7> :TlistToggle<CR>
+```
+
+Enkele functie toetsen
+
+Opdracht | Verklaring
+-------- | ----------
+Ctrl-]   | Gaan naar de definitie van het object
+Ctrl-t   | Keer terug naar het vorige punt
+F7       | Open de taglist, dit is een eigen instelling in .vimrc
+
+Bronnen
+
+* Homepage van taglist plugin. http://vim.sourceforge.net/scripts/script.php?script_id=273
+* The Geek Stuff uitleg over de taglist plugin http://www.thegeekstuff.com/2009/04/ctags-taglist-vi-vim-editor-as-sourece-code-browser/
+
+
+
+### Github
+Op github zijn vele plugins voor Vim te vinden. Downloaden gaat eenvoudig. Pak
+het https adres van een pagina, kopieer dit naar het klemboard (ctrl-c).
+
+In een shell type het volgende:
+```vim
+git clone <ctrl-v><enter>
+```
+En de code wordt gedownload.
+
+
+## Editen van markdown bestanden
+
+### Editing tips
 
 Progammeren is wat anders dan een tekst schrijven. De regel lengte heb ik daarom
 voor markdown files korter geconfigureerd. Toegevoegd aan `vimrc`:
@@ -406,14 +542,14 @@ aangepast door het eerst te selecteren en vervolgens opnieuw te formateren met
 
 
 
-### Markdown syntax highlighting
+### Syntax highlighting
 Tim Pope heeft een uitstekende plugin gemaakt voor markdown files (.md). Het is
 de moeite om deze toe te voegen aan Vim.
 
 Bron: https://github.com/tpope/vim-markdown
 * * * 
 
-### Folding voor markdown files
+### Folding
 
 Markdown bestanden kunnen erg lang worden, je kunt dan het overzicht kwijt
 raken.  Onderstaande zorgt ervoor dat op de headings `#` eenvoudig folding
@@ -435,6 +571,61 @@ autocmd FileType markdown set foldmethod=syntax
 Bron: http://occasionallycogent.com/post/5222794912/folding-fun-with-vim-and-markdown
 
 Een geweldige tip!
+
+
+### Taglist plugin configureren voor markdown bestanden
+
+Nadat de taglist plugin is geïnstalleerd moeten nog wat aanvullende configuratie
+werkzaamheden plaatsvinden. 
+
+Edit het bestand `$HOME/.ctags` in de homedirectory dus, en voeg daar het volgende
+aan toe.
+```vim
+--langdef=markdown
+--langmap=markdown:.md
+--regex-markdown=/^#[ \t]+(.*)/-\1/h,heading1/
+--regex-markdown=/^##[ \t]+(.*)/-  \1/h,heading2/
+--regex-markdown=/^###[ \t]+(.*)/-    \1/h,heading3/
+--regex-markdown=/^####[ \t]+(.*)/-      \1/h,heading4/
+--regex-markdown=/^#####[ \t]+(.*)/-        \1/h,heading5/
+--regex-markdown=/^######[ \t]+(.*)/-          \1/h,heading6/
+--regex-markdown=/^#######[ \t]+(.*)/-            \1/h,heading7/
+```
+
+Vim moet weten wat markdown bestanden zijn, zorg ervoor dat dat reeds
+geconfigureerd is of voeg aan `.vimrc` het volgende toe.
+```vim
+au BufNewFile,BufRead *.md set filetype=markdown
+```
+
+En als laatste moet er dan nog een stukje configuratie van de taglist plugin
+gebeuren in het bestand `.vimrc` voeg het volgende toe.
+```vim
+let g:tlist_markdown_settings = 'markdown;h:Headlins'
+```
+
+Hierna herkent de taglist plugin ook markdown bestanden.
+
+Bron: https://github.com/hupili/evermd/tree/master/doc/howto-markdown-in-vim
+
+
+
+## Python code runnen in Vim
+Op internet 2 functie toetsen definities gevonden, neem er eentje op.
+```vim
+nnoremap <buffer> <F5> :exec '!python' shellescape(@%, 1)<cr>
+nnoremap <silent> <F5> <Esc>:w<CR>:!clear;python %<CR>
+```
+De 2e maakt eerst scherm schoon en voert de code dan uit.
+
+Een leuke optie is dat een gedeelte van de code kan ook uitgevoerd worden.
+Selecteer de uit te voeren code (visual mode). Type vervolgens:
+```vim
+:!python
+```
+en de code wordt uitgevoerd. De output komt op het scherm in Vim. Druk `u` om de
+output van het script te verwijderen en de code te herstellen.
+
 
 
 ## Bronnen

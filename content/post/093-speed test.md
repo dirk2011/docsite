@@ -1,7 +1,7 @@
 +++
 date = "2016-08-14T00:03:00+02:00"
 draft = false
-title = "093 - Speed test"
+title = "093 - Speed test met wget en time"
 tags = ['raspberry', 'linux', 'tools', 'speed test', 'wget', 'time']
 topics = ['linux']
 
