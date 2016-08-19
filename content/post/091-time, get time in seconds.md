@@ -7,13 +7,7 @@ topics = ['linux']
 
 +++
 
-# Time, get time in seconds
-
-
-| Document info       |             |
-|---------------------|-------------|
-| Laatst bijgewerkt   | 2016-08     |
-
+# Time
 
 Time geeft weer hoe lang de uitvoering van een commando geduurd heeft. Type
 eerst `time` en daarna het uit te voeren commando. 
@@ -29,8 +23,7 @@ user    0m6.104s
 sys     0m17.368s
 ```
 
-
-## Meer info
+# Meer info
 
 * man time
 

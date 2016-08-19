@@ -9,12 +9,6 @@ topics = ['linux']
 
 # Speed test 
 
-
-| Document info       |             |
-|---------------------|-------------|
-| Laatst bijgewerkt   | 2016-08     |
-
-
 Speedtest is een website waar je de snelheid van je internet verbinding kunt
 testen. Deze website benader je van uit je browser. Als linux gebruiker wil ik
 een testje kunnen doen vanaf de command line.
@@ -59,7 +53,7 @@ sys     0m4.320s
 Met dank aan Hak5 voor het idee.
 
 
-## Bronnen 
+# Bronnen 
 
 * http://www.speedtest.net/nl/
 * test bestanden http://www.glasvezel.nu/speedtest-servers-100mb-1000mb-bin

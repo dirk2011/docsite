@@ -10,11 +10,6 @@ topics = ['linux']
 # bc, calculator
 
 
-| Document info       |             |
-|---------------------|-------------|
-| Laatst bijgewerkt   | 2016-08     |
-
-
 Bc is een calculator. Op mijn Raspberry was dit programma nog niet geïnstalleerd. Dus:
 ```bash
 sudo apt-get install bc
@@ -40,7 +35,7 @@ $ echo 5 + 5 | bc
 10
 ```
 
-## Meer info
+# Meer info
 
 * man bc
 

@@ -2,10 +2,11 @@
 date = "2016-08-18T00:01:00+02:00"
 draft = false
 title = "094 - Jekyll op de Raspberry"
-tags = ['raspberry', 'linux', 'jekyll']
+tags = ['raspberry', 'linux', 'jekyll', 'markdown', 'hugo']
 
 +++
 
+# Jekyll installeren
 
 Gohugo werkt uitstekend om een static website te genereren. Wil echter toch ook
 Jekyll eens uit proberen. Volgens de website
@@ -63,7 +64,7 @@ Opnieuw geprobeerd te installeren. Wederom geen succes. Zoeken op internet
 levert op, dat developer versie van ruby ook geïnstalleerd moeten worden. Dat
 gedaan met `sudo apt-get install ruby-dev`.
 
-Daarna de installatie van jekyll nogmaals uitgevoerd, nu met wel de goede gem
+Daarna de installatie van Jekyll nogmaals uitgevoerd, met wel de goede gem
 versie:  
 `sudo gem2.1 install jykell -V`.   
 Jekyll versie 3.2.1 lijkt nu met succes te zijn geïnstalleerd. Installatie
@@ -82,6 +83,61 @@ New jekyll site installed in /media/raspberry-v/testsite.
 
 
 Wordt vervolgd.
+
+# Website genereren
+
+Volgend doel, proberen de website te genereren. `jekyll build` Er volgt een foutmelding. 
+Zoeken op internet, foutmelding komt meer voor oplossing installatie extra
+software.   
+`sudo gem2.1 install bundler`,
+[bron](http://stackoverflow.com/questions/19061774/cannot-load-such-file-bundler-setup-loaderror).
+
+Wederom proberen de website te genereren. En wederom een foutmelding. Nu lijkt
+het er op dat het theme niet is geïnstalleerd, foutmelding geeft aan dat gem
+minima niet gevonden kan worden.
+Gekeken op de github pagina van het theme. Het is wel geïnstalleerd echter moet
+nog een opdracht worden uitgevoerd: `bundle`,
+[bron](https://github.com/jekyll/minima).
+
+Nogmaals de website genereren met `jekyll build`, nu geen foutmelding, gelukt. 
+
+
+# Website uitvoeren
+
+De website heeft een configuratie bestand. Eerst hierin nog wat zaken aanpassen,
+omdat standaard is de website alleen beschikbaar op de local host. Op de local
+host heb ik geen grafische omgeving met een webbrowser draaien.
+Na wat zoeken en puzzelen, volgen toegevoegd aan het bestand `_config.yml`.
+```bash
+port: 1313
+host: 192.168.0.166
+# baseurl: http://rasp166
+bind: 0.0.0.0
+```
+
+Website opgestart met: `jekyll serve`. 
+
+Dan nu eindelijk de laatste stap, web oproepen in de browser: `http:rasp166:1313`,
+en hij doet het.
+
+
+# Posting aanpassen
+Hugo kan gewijzigde postings meteen weergeven. Zoiets is met Jekyll ook mogelijk
+alleen moet je zelf de webpagina verversen.
+Jekyll opnieuw opgestart met deze optie.
+```bash
+$ jekyll serve --watch --incremental
+```
+
+In een ander venster de posting aangepast, en op verversen gedrukt. En het werkt
+er wordt een gewijzigde webpagina weergegeven. 
+Voor het verversen van deze ene pagina waren 1.7 seconden nodig.
+
+
+# Voorlopige conclusie
+Jekyll installeren was lang niet zo eenvoudig als Hugo. Er zijn veel
+afhankelijkheden van extra benodigde software. Jekyll is een zwaardere oplossing
+dan Hugo.
 
 
 Bronnen:
