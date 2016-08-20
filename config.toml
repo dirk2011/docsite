@@ -15,7 +15,6 @@ paginatePath = "page"
 # disqus 
 disqusShortname = "www-dirkpostma-com"
 
-
 [permalinks]
     post = "/:year/:slug/"
     code = "/:slug/"
@@ -23,10 +22,11 @@ disqusShortname = "www-dirkpostma-com"
 [taxonomies]
     tag = "tags"
     topic = "topics"
+    updated = "updated"
 
 [author]
     name = "dirk"
-#    email = "yourname@example.com"
+#   email = "yourname@example.com"
 
 
 [params]

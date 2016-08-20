@@ -3,6 +3,8 @@ date = "2016-08-10T00:00:00+02:00"
 draft = false
 title = "090 - Markdown"
 tags = ['markdown', 'linux', 'hugo']
+topics = ['hugo']
+updated = "2016-08-10"
 +++
 
 # Aantekeningen over markdown 
@@ -130,7 +132,7 @@ dit is gewoon en dit is: **vet, 2 sterretjes of 2 keer een underscore**
 
 *cursief: één ster, of één underscore*
 ```
-*cursief: één ster, of één underscore*
+\*cursief: één ster, of één underscore\*
 ```
 
 ***vet en cursief***

@@ -3,7 +3,7 @@ date = "2016-08-18T00:01:00+02:00"
 draft = false
 title = "094 - Jekyll op de Raspberry"
 tags = ['raspberry', 'linux', 'jekyll', 'markdown', 'hugo']
-
+updated = '2016-08-20'
 +++
 
 # Jekyll installeren

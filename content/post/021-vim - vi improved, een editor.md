@@ -4,6 +4,7 @@ draft = false
 title = "021 - Vim, vi improved, een super editor"
 tags = ['vim', 'linux', 'markdown', 'raspberry']
 topics = ['linux']
+updated = '2016-08-20'
 
 +++
 

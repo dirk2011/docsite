@@ -4,7 +4,7 @@ draft = false
 title = "091 - time, get time in seconds"
 tags = ['raspberry', 'linux', 'tools']
 topics = ['linux']
-
+updated = "2016-08-19"
 +++
 
 # Time

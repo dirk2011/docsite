@@ -4,6 +4,7 @@ draft = false
 title = "201 - Element- en groepprefixen in Coda"
 tags = ['coda', 'sql', 'oracle', 'rapportages']
 topics = ['Coda']
+updated = "2016-08-03"
 +++
 
 # Element- en groepprefixen in Coda

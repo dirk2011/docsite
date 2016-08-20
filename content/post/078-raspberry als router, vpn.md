@@ -4,6 +4,7 @@ draft = false
 title = "078 - Raspberry als router"
 tags = ['raspberry', 'linux']
 topics = ['Raspberry']
+updated = "2016-08-08"
 +++
 
 # Raspberry als router

@@ -14,3 +14,8 @@
     Title = "Show list of topics"
     URL = "/topics"
 
+[4]
+    Name = "Updated"
+    Title = "Updated"
+    URL = "/updated"
+

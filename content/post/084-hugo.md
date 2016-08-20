@@ -3,31 +3,28 @@ date = "2016-07-28T01:00:00+02:00"
 draft = false
 title = "084 - Hugo, static site generator"
 tags = ['website', 'hugo', 'linux', 'markdown']
+updated = "2016-08-20"
+topics = ['hugo']
 +++
 
 # Hugo, static site generator
 
 
-| Document info       |                   |
-|---------------------|-------------------|
-| Laatst bijgewerkt   | 2016-07           |
-
-
 ## Info
-Een programma om een website mee op te zetten. Kan een alternatief zijn voor
-WordPress.
+Hugo is een programma om een website mee op te zetten. Het kan een prima
+alternatief zijn voor WordPress.
 
 De content (artikelen) worden geschreven in markdown (.md) bestanden.
 Vervolgens wordt een statische website gegenereert.  De website werkt daardoor
-erg snel, en geen gedoe meer met database, php, etc.  Het editen van de
+erg snel, er is geen gedoe meer met databases, php, etc.  Het editen van de
 artikelen kan offline gebeuren m.b.v. een tekst editor.
 
 
 ## Downloaden voor de raspberry
-Ga naar deze pagina
-https://github.com/spf13/hugo/releases
-download dit bestand
-`hugo_0.16-1_armhf.deb`
+Er is een speciale package beschikbaar voor de Raspberry.
+Ga naar deze [pagina](https://github.com/spf13/hugo/releases)
+download dit bestand `hugo_0.16-1_armhf.deb`, of een nieuwere versie.
+Behalve deze programma package heeft Hugo niets nodig. Geweldig!
 
 
 ## Installeren
@@ -36,23 +33,43 @@ sudo dpkg -i hugo_0.16-1_armhf.deb
 ```
 
 ## Website aanmaken
+Maak een nieuwe directory aan, om alle bestanden van de website in op te slaan.
 ```bash
 mkdir testsite
-hugo new site testsite
-cd testsite
+``` 
+Het aanmaken van een nieuwe website gaat dan als volgt.
+```bash
+`hugo new site testsite
 ```
+En ga de nieuwe website "binnen" met 
+```bash
+`cd testsite
+```
+
 
 ## hyde-y thema installeren
+Ga naar de directory waar de thema's in worden opgeslagen.
 ```bash
 cd themes
+```
+Download het nieuwe thema van Github.
+```bash
 git clone https://github.com/enten/hyde-y
 ```
+Hiermee is het thema geïnstalleerd. Het nieuwe thema moet nog wel geconfigureerd
+worden.
+
 
 ## Eerste posting aanmaken
+Ga terug naar de rootdirectory van de website. 
 ```bash
 cd ..
+```
+Maak een eerste posting/artikel aan.
+```bash
 hugo new post/first.md
 ```
+
 
 ## Website “uitvoeren/draaien/hosten”
 ```bash

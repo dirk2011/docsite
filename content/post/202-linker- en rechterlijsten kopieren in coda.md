@@ -4,6 +4,7 @@ draft = false
 title = "202 - Linker- en rechterlijsten kopieren in Coda"
 tags = ['coda', 'sql', 'oracle', 'scripts']
 topics = ['Coda'] 
+updated = "2016-08-03"
 +++
 
 # Linker- en rechterlijsten kopieren in Coda

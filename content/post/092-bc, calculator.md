@@ -4,7 +4,7 @@ draft = false
 title = "092 - bc, calculator"
 tags = ['raspberry', 'linux', 'tools']
 topics = ['linux']
-
+updated = "2016-08-19"
 +++
 
 # bc, calculator
