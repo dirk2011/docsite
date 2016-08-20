@@ -137,7 +137,9 @@ Voor het verversen van deze ene pagina waren 1.7 seconden nodig.
 # Voorlopige conclusie
 Jekyll installeren was lang niet zo eenvoudig als Hugo. Er zijn veel
 afhankelijkheden van extra benodigde software. Jekyll is een zwaardere oplossing
-dan Hugo.
+dan Hugo.  
+Inhoudelijk wel benieuwd welke themes er zijn en hoe eenvoudig of moeilijk
+content te beheren is.
 
 
 Bronnen:
