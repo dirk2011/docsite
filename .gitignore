@@ -3,11 +3,9 @@
 # ignore deze directories
 #
 public/
-themes/
 
 # ignore deze bestanden
 #
 mijndomein.sh
 *.swp
-# config.toml
 
