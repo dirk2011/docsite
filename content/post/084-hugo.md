@@ -4,7 +4,7 @@ draft = false
 title = "084 - Hugo, static site generator"
 tags = ['website', 'hugo', 'linux', 'markdown']
 updated = "2016-08-20"
-topics = ['hugo', 'raspberry']
+categories = ['hugo', 'raspberry']
 +++
 
 # Hugo, static site generator

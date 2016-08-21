@@ -1,10 +1,12 @@
 +++
-date = "2016-08-20T00:00:00+02:00"
+date = "2016-08-21T00:00:00+02:00"
 draft = false
 title = "097 - Hugo, Octopress"
 tags = ['raspberry', 'linux', 'hugo', 'octopress']
 topics = ['Hugo']
+updated = "2016-08-21"
 toc = false
+categories = ["Hugo"]
 +++
 
 ## Octopress een andere thema voor Hugo
@@ -30,10 +32,13 @@ git clone https://github.com/parsiya/Hugo-Octopress.git
 ```
 
 ## Configuratie
+Nieuw configuratie voor de website aangemaakt. In plaats van `config.toml` ga ik
+het bestand `go-octopress.toml` gebruiken. Handig om te switchen tussen
+verschillende configuraties en themas. 
 
-t
-
-
+Dus dan ook een nieuw shell script aangemaakt om de nieuwe configuratie op te
+starten `go-octopress.sh`. Met daarin toegevoegd aan de opstart regel van Hugo: 
+`--config="go-octopress.toml"`
 
 
 ## Bronnen:

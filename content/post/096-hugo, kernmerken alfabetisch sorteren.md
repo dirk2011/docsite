@@ -2,8 +2,8 @@
 date = "2016-08-20T00:00:00+02:00"
 draft = false
 title = "096 - Hugo, kenmerken alfabetisch sorteren"
-tags = ['hugo', 'linux']
-topics = ['hugo']
+tags = ['Hugo', 'Hyde Y', 'linux']
+categories = ['Hugo']
 updated = "2016-08-20"
 +++
 

@@ -3,7 +3,7 @@ date = "2015-03-02T00:00:00+02:00"
 draft = false
 title = "002 - Raspberry eerste stappen"
 tags = ['raspberry', 'linux']
-topics = ['Raspberry']
+categories = ['Raspberry']
 
 +++
 # Raspberry eerste stappen

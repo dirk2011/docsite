@@ -1,3 +1,8 @@
+################################################################################
+# desc: hugo config file for octopress theme
+# date: 2016-08
+################################################################################
+
 baseurl = "http://example.com"
 disablePathToLower = false
 languageCode = "en-us"
@@ -5,7 +10,8 @@ title = "dirk postma"
 theme = "hugo-octopress"
 
 # Number of blog posts displayed in each page
-paginate = 6
+# paginate = 6
+paginate = 10
 
 pygmentsuseclasses = false
 ### pygmentsstyle = "solarized_dark"
@@ -21,6 +27,7 @@ pygmentscodefences = true
 # pygmentsoptions = "linenos=true"
 
 [permalinks]
+# month and day removed
 post = "/blog/:year-:title/" # change the post URL to look like the old ones
 
 # Make tags and categories work
@@ -28,9 +35,12 @@ post = "/blog/:year-:title/" # change the post URL to look like the old ones
       tag = "tags"
       category = "categories"
       topics = "topics"
+      updated = "updated"
+
 # [taxonomies]
 #    tag = "tags"
 #    topic = "topics"
+#    category = "categories"
 #    updated = "updated"
 
 # Menu
@@ -38,19 +48,14 @@ post = "/blog/:year-:title/" # change the post URL to look like the old ones
 # If navigationNewWindow is set in [params] to true then all links except root ("/") will open in a new window
 # If navigationNewWindow does not exist or set to false then links will open in the same window
 [[menu.main]]
-	Name = "Blog"
-	URL = "/"
-	weight = -5
+    Name = "Blog"
+    URL = "/"
+    weight = -5
 
 [[menu.main]]
-	Name = "Google"
-	URL = "https://www.google.com/"
-	weight = -5
-
-[[menu.main]]
-	Name = "This theme on Github"
-	URL = "https://www.github.com/parsiya/hugo-octopress"
-
+    Name = "Google"
+    URL = "https://www.google.com/"
+    weight = -5
 
 # Sidebar menus
 # Enable with "sidebarMenuEnabled = true" in [params]
@@ -58,22 +63,22 @@ post = "/blog/:year-:title/" # change the post URL to look like the old ones
 
 [[menu.sidebar]]
     Name = "Coda"
-    URL = "/topics/coda/"
+    URL = "/categories/coda/"
     weight = 1
 
 [[menu.sidebar]]
     Name = "Linux"
-    URL = "/topics/linux/"
+    URL = "/categories/linux/"
     weight = 2
 
 [[menu.sidebar]]
     Name = "Hugo"
-    URL = "/topics/hugo/"
+    URL = "/categories/hugo/"
     weight = 2
 
 [[menu.sidebar]]
     Name = "Raspberry Pi"
-    URL = "/topics/raspberry/"
+    URL = "/categories/raspberry/"
     weight = 2
 
 
@@ -99,7 +104,7 @@ post = "/blog/:year-:title/" # change the post URL to look like the old ones
 	sidebarMenuHeader = "Onderwerpen"
 
 	# sidebar links
-	github = "https://github.com/parsiya/"
+	github = "https://github.com/dirk2011/"
 	# bitbucket = "https://bitbucket.org/parsiya/"
 	# twitter = "https://twitter.com/cryptogangsta/"
 	# keybase = "https://keybase.io/parsiya/"
@@ -130,14 +135,16 @@ post = "/blog/:year-:title/" # change the post URL to look like the old ones
 	# Text of the "Continue Reading" label. &rarr; == right arrow, but it gets messed up in the string so we will add it to index.html manually
 	continueReadingText = "Would you like to know more?"
 
-	# Google analytics code
-	googleAnalytics = "google analytics"
+    # Google analytics code
+    googleAnalytics = "UA-20451652-4"
 
-	# Disqus shortcode
-	# Disable comments for a specific post by adding "comments: false" in its frontmatter
-	disqusShortname = "Your Google Analytics tracking code"
+    # Disqus shortcode
+    # Disable comments for a specific post by adding "comments: false" in its frontmatter
+    # disqus 
+    disqusShortname = "www-dirkpostma-com"
 
-	rss = true  # switch to true to enable RSS icon link
+    # rss uitgezet
+    rss = false  # switch to true to enable RSS icon link
 
   # Set to true to use a text label for RSS instead of an icon
   # This is overwritten by the `rss` setting

@@ -3,7 +3,7 @@ date = "2012-03-12T00:00:00+02:00"
 draft = false
 title = "201 - Element- en groepprefixen in Coda"
 tags = ['coda', 'sql', 'oracle', 'rapportages']
-topics = ['Coda']
+categories = ['Coda']
 updated = "2016-08-03"
 +++
 
