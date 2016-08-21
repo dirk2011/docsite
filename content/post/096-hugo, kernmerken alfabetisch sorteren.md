@@ -60,6 +60,7 @@ door
 `{{ range $key,$value := .Data.Terms.Alphabetical }}`
 
 
+Bron: https://gohugo.io/taxonomies/ordering/
 
 ![linux](/img/logo_linux.jpg)
 

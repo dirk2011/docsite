@@ -4,7 +4,7 @@ draft = false
 title = "084 - Hugo, static site generator"
 tags = ['website', 'hugo', 'linux', 'markdown']
 updated = "2016-08-20"
-topics = ['hugo']
+topics = ['hugo', 'raspberry']
 +++
 
 # Hugo, static site generator
@@ -14,13 +14,20 @@ topics = ['hugo']
 Hugo is een programma om een website mee op te zetten. Het kan een prima
 alternatief zijn voor WordPress.
 
-De content (artikelen) worden geschreven in markdown (.md) bestanden.
-Vervolgens wordt een statische website gegenereert.  De website werkt daardoor
+De artikelen (content) worden geschreven in markdown (.md) bestanden.
+Vervolgens wordt een statische website gegenereert.  De website laadt daardoor
 erg snel, er is geen gedoe meer met databases, php, etc.  Het editen van de
 artikelen kan offline gebeuren m.b.v. een tekst editor.
 
+Hugo kan wijzigen in artikelen meteen automatisch weergeven. Dus in het ene
+venster type je met een editor je artikel, en in een browser kun je meteen het
+resultaat zien.
 
-## Downloaden voor de raspberry
+Als je klaar bent met editen, genereer je je website, en kun je deze uploaden
+naar een webserver, zodat de hele wereld je site kan zien.
+
+
+## Programma downloaden voor de raspberry
 Er is een speciale package beschikbaar voor de Raspberry.
 Ga naar deze [pagina](https://github.com/spf13/hugo/releases)
 download dit bestand `hugo_0.16-1_armhf.deb`, of een nieuwere versie.
@@ -43,7 +50,7 @@ Het aanmaken van een nieuwe website gaat dan als volgt.
 ```
 En ga de nieuwe website "binnen" met 
 ```bash
-`cd testsite
+cd testsite
 ```
 
 
@@ -52,7 +59,7 @@ Ga naar de directory waar de thema's in worden opgeslagen.
 ```bash
 cd themes
 ```
-Download het nieuwe thema van Github.
+Download het te installeren thema van Github.
 ```bash
 git clone https://github.com/enten/hyde-y
 ```
@@ -80,15 +87,16 @@ hugo server --buildDrafts --theme=hyde-y --bind=0.0.0.0 -b=http://rasp166:1313
 Plaats in de map `/static` het bestand met als naam: `favicon.png`.
 
 
-## Enkele andere hugo commands
-```bash
-hugo version
-```
+## Conclusie
+Hugo is een uistekend programma voor het opzetten van een website. Het programma
+is eenvoudig te installeren en kan prima draaien op een Raspberry. Op
+de website van het programma is veel documentatie terug te vinden.
+
 
 ## Bronnen
 
-* hugo, http://gohugo.io/
-* hugo quickstart, http://gohugo.io/overview/quickstart/
-* hyde-y theme, http://themes.gohugo.io/hyde-y/
+* Hugo, http://gohugo.io/
+* Hugo quickstart, http://gohugo.io/overview/quickstart/
+* Hyde-y theme, http://themes.gohugo.io/hyde-y/
 
 
