@@ -3,7 +3,7 @@ date = "2016-07-26T10:07:00+02:00"
 draft = false
 title = "078 - Raspberry als router"
 tags = ['raspberry', 'linux']
-topics = ['Raspberry']
+categories = ['Raspberry']
 updated = "2016-08-08"
 +++
 

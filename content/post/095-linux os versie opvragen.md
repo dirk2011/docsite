@@ -3,7 +3,7 @@ date = "2016-08-18T00:02:00+02:00"
 draft = false
 title = "095 - Linux os versie opvragen, /etc/os-release"
 tags = ['raspberry', 'linux']
-topics = ['linux'] 
+categories = ['linux'] 
 
 +++
 

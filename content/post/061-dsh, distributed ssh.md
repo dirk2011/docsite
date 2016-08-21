@@ -3,7 +3,7 @@ date = "2015-10-01T00:00:00+02:00"
 draft = false
 title = "061 - dsh, distributed ssh"
 tags = ['raspberry', 'linux', 'ssh', 'dsh']
-topics = ['linux']
+categories = ['linux']
 +++
 
 # Dsh, distributed ssh

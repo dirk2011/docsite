@@ -3,7 +3,7 @@ date = "2014-08-01T00:00:00+02:00"
 draft = false
 title = "017 - Raspberry, sqlite database"
 tags = ['raspberry', 'linux', 'sqlite', 'database']
-topics = ['Raspberry']
+categories = ['Raspberry']
 +++
 
 # Raspberry, sqlite database

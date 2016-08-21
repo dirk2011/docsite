@@ -3,7 +3,7 @@ date = "2016-07-31T00:00:00+02:00"
 draft = false
 title = "086 - Super cd met j van autojump"
 tags = ['autojump', 'bash', '.bashrc', 'raspberry', 'linux']
-topics = ['linux']
+categories = ['linux']
 +++
 
 # Autojump

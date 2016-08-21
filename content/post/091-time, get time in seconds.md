@@ -3,7 +3,7 @@ date = "2016-08-14T00:01:00+02:00"
 draft = false
 title = "091 - time, get time in seconds"
 tags = ['raspberry', 'linux', 'tools']
-topics = ['linux']
+categories = ['linux']
 updated = "2016-08-19"
 +++
 

@@ -28,7 +28,7 @@ pygmentscodefences = true
 
 [permalinks]
 # month and day removed
-post = "/blog/:year-:title/" # change the post URL to look like the old ones
+post = "/:year/:slug/"
 
 # Make tags and categories work
 [indexes]
@@ -133,7 +133,7 @@ post = "/blog/:year-:title/" # change the post URL to look like the old ones
 	searchEngineURL = "https://www.google.com/search"
 
 	# Text of the "Continue Reading" label. &rarr; == right arrow, but it gets messed up in the string so we will add it to index.html manually
-	continueReadingText = "Would you like to know more?"
+	continueReadingText = "Verder lezen . . . "
 
     # Google analytics code
     googleAnalytics = "UA-20451652-4"

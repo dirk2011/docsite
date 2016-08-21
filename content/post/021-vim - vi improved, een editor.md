@@ -3,7 +3,7 @@ date = "2016-08-17T00:00:00+02:00"
 draft = false
 title = "021 - Vim, vi improved, een super editor"
 tags = ['vim', 'linux', 'markdown', 'raspberry']
-topics = ['linux']
+categories = ['linux']
 updated = '2016-08-20'
 
 +++

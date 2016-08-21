@@ -3,7 +3,7 @@ date = "2016-08-06T00:00:00+02:00"
 draft = false
 title = "088 - Elfproef"
 tags = ['coda', 'oracle', 'rapportages', 'elfproef']
-topics = ['coda']
+categories = ['coda']
 +++
 
 # Elfproef

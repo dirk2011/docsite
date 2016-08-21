@@ -1,6 +1,12 @@
 # generate website
 
 echo website genereren, . . . .
-hugo --theme=hyde-y  -b=http://www.dirkpostma.com
-# hugo --theme=hyde-y  -b=/
+
+# hydy-y
+# hugo --theme=hyde-y  -b=http://www.dirkpostma.com
+
+# octopress
+hugo --config="go-octopress.toml" -b=http://www.dirkpostma.com
+
+# eof
 

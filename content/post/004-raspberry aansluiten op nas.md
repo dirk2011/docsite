@@ -3,7 +3,7 @@ date = "2015-03-04T00:00:00+02:00"
 draft = false
 title = "004 - Rasberry aansluiten op Synology nas"
 tags = ['raspberry', 'linux', 'nas', 'synology']
-topics = ['Raspberry']
+categories = ['Raspberry']
 +++
 
 # Rasberry aansluiten op Synology nas.

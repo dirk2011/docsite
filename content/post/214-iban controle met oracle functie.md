@@ -3,7 +3,7 @@ date = "2013-05-01T00:00:00+02:00"
 draft = false
 title = "214 - IBAN controle met een Oracle functie"
 tags = ['coda', 'sql', 'oracle', 'rapportages', 'iban']
-topics = ['Coda']
+categories = ['Coda']
 +++
 
 # IBAN controle met Oracle functie
