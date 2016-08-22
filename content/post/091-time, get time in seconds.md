@@ -1,10 +1,11 @@
 +++
 date = "2016-08-14T00:01:00+02:00"
 draft = false
-title = "091 - time, get time in seconds"
+title = "091 - Time, get time in seconds"
 tags = ['raspberry', 'linux', 'tools']
 categories = ['linux']
 updated = "2016-08-19"
+toc = false
 +++
 
 # Time

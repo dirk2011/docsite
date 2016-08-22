@@ -1,17 +1,13 @@
 +++
 date = "2013-05-01T00:00:00+02:00"
 draft = false
-title = "214 - IBAN controle met een Oracle functie"
+title = "214 - IBAN controle m.b.v. een Oracle functie"
 tags = ['coda', 'sql', 'oracle', 'rapportages', 'iban']
 categories = ['Coda']
+updated = '201305'
 +++
 
-# IBAN controle met Oracle functie
-
-
-| Document info       |                   |
-|---------------------|-------------------|
-| Laatst bijgewerkt   | 2013-05           |
+# IBAN controle met behulp van een Oracle functie
 
 
 ## Inleiding

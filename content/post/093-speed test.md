@@ -4,7 +4,7 @@ draft = false
 title = "093 - Speed test met wget en time"
 tags = ['raspberry', 'linux', 'tools', 'speed test', 'wget', 'time']
 categories = ['linux']
-
+toc = false
 +++
 
 # Speed test 

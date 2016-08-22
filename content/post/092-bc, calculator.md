@@ -5,6 +5,7 @@ title = "092 - bc, calculator"
 tags = ['raspberry', 'linux', 'tools']
 categories = ['linux']
 updated = "2016-08-19"
+toc = false
 +++
 
 # bc, calculator

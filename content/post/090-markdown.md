@@ -10,11 +10,6 @@ updated = "2016-08-10"
 # Aantekeningen over markdown 
 
 
-| Document info       |             |
-|---------------------|-------------|
-| Laatst bijgewerkt   | 2016-08     |
-
-
 ## Inleiding
 Het markdown formaat is geweldig voor het schrijven van documentatie en artikelen.
 Voor het schrijven kan een tekst editor gebruikt worden en is geen (ingewikkeld) 
