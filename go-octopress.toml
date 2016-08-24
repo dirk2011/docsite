@@ -48,46 +48,40 @@ post = "/:year/:slug/"
 # If navigationNewWindow is set in [params] to true then all links except root ("/") will open in a new window
 # If navigationNewWindow does not exist or set to false then links will open in the same window
 [[menu.main]]
-    Name = "Blog"
+    Name = "Home"
     URL = "/"
-    weight = -5
+    weight = 1 
 
 [[menu.main]]
     Name = "Google"
     URL = "https://www.google.com/"
-    weight = -5
+    weight = 4
 
 # Sidebar menus
 # Enable with "sidebarMenuEnabled = true" in [params]
 # Header text is "sidebarMenuHeader" in [params]
 
 [[menu.sidebar]]
-    Name = "Coda"
-    URL = "/categories/coda/"
+    Name = "Categorieën"
+    URL = "/categories/"
+    weight = -2
+
+[[menu.sidebar]]
+    Name = "Tags"
+    URL = "/tags/"
+    weight = -1
+
+[[menu.sidebar]]
+    Name = "Bijgewerkt"
+    URL = "/updated/"
     weight = 1
-
-[[menu.sidebar]]
-    Name = "Linux"
-    URL = "/categories/linux/"
-    weight = 2
-
-[[menu.sidebar]]
-    Name = "Hugo"
-    URL = "/categories/hugo/"
-    weight = 2
-
-[[menu.sidebar]]
-    Name = "Raspberry Pi"
-    URL = "/categories/raspberry/"
-    weight = 2
-
 
 [params]
         tableOfContents = true
 
 	# --- Start sidebar options ---
 	# Number of recent posts that will be shown in the sidebar - set to 0 or remove to hide this section
-	sidebarRecentLimit = 5
+	sidebarRecentLimit = 10
 
 	# Sidebar header - passed to markdownify so you can write markdown here
 	# sidebarHeader = "Sidebar Header"
@@ -101,7 +95,7 @@ post = "/:year/:slug/"
 	"""
 	# Sidebar menu - if true will add a sidebar menu between sidebar text and recent posts
 	sidebarMenuEnabled = true
-	sidebarMenuHeader = "Onderwerpen"
+	sidebarMenuHeader = "Site ingangen"
 
 	# sidebar links
 	github = "https://github.com/dirk2011/"
