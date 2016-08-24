@@ -1,10 +1,10 @@
 +++
 date = "2016-08-21T00:00:00+02:00"
 draft = false
-title = "097 - Hugo, Octopress"
+title = "097 - Octopress een thema voor Hugo"
 tags = ['raspberry', 'linux', 'hugo', 'octopress']
 categories = ['Hugo']
-updated = "2016-08-21"
+updated = "2016-08-24"
 toc = false
 +++
 

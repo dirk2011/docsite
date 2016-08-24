@@ -1,17 +1,18 @@
 +++
 date = "2016-08-14T00:02:00+02:00"
 draft = false
-title = "092 - bc, calculator"
+title = "092 - Bc een calculator voor de linux cli"
 tags = ['raspberry', 'linux', 'tools']
 categories = ['linux']
-updated = "2016-08-19"
+updated = "2016-08-24"
 toc = false
 +++
 
 # bc, calculator
 
 
-Bc is een calculator. Op mijn Raspberry was dit programma nog niet geïnstalleerd. Dus:
+Bc is een calculator voor de linux command line interface (cli). Op mijn
+Raspberry was dit programma nog niet geïnstalleerd. Dus:
 ```bash
 sudo apt-get install bc
 ```

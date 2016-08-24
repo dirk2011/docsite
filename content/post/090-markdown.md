@@ -4,23 +4,29 @@ draft = false
 title = "090 - Markdown"
 tags = ['markdown', 'linux', 'hugo']
 categories = ['hugo']
-updated = "2016-08-10"
+updated = "2016-08-24"
 +++
 
 # Aantekeningen over markdown 
 
 
 ## Inleiding
+Markdown is een markup taal. Letterlijk vertaald betekent markup markeren. Voor
+mij is het een opmaak taal. Met markdown kun je op een eenvoudige manier
+opgemaakte tekst bestanden genereren.
+
 Het markdown formaat is geweldig voor het schrijven van documentatie en artikelen.
 Voor het schrijven kan een tekst editor gebruikt worden en is geen (ingewikkeld) 
 office programma nodig.
 Het resultaat is een tekst bestand met meestal de extensie .md.
 
-Voor versie beheer kan gebruik worden gemaakt van Git. De markdown bestanden 
+Omdat het om tekst bestanden gaat, bestanden zonder binaire code, kan 
+voor versie beheer gebruik worden gemaakt van Git. De markdown bestanden 
 kunnen geconverteerd worden in vele formaats, zoals o.a. html, epub, en pdf's.
 
-De opmaak van een document vindt plaats op een eenvoudige manier, 
-onderstaand een overzicht.
+De opmaak van een document vindt plaats op een eenvoudige manier, onderstaand
+een niet volledig overzicht van de bijzondere tekens die hiervoor gebruikt
+kunnen worden.
 
 
 

@@ -4,7 +4,6 @@ draft = false
 title = "001 - Raspberry image installeren"
 tags = ['raspberry', 'linux']
 categories = ['Raspberry']
-
 +++
 
 # Raspberry image installeren

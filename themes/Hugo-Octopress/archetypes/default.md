@@ -6,3 +6,9 @@ categories = ["none"]
 updated = "2016"
 toc = false
 +++
+
+
+![linux](/img/logo_linux.jpg)
+
+* * *
+

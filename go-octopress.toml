@@ -72,7 +72,7 @@ post = "/:year/:slug/"
     weight = -1
 
 [[menu.sidebar]]
-    Name = "Bijgewerkt"
+    Name = "Datum bijgewerkt"
     URL = "/updated/"
     weight = 1
 
