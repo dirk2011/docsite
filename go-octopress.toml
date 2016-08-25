@@ -9,6 +9,9 @@ languageCode = "en-us"
 title = "dirk postma"
 theme = "hugo-octopress"
 
+# tijdelijke bestanden van vi
+ignoreFiles = ["\\.swp$"]
+
 # Number of blog posts displayed in each page
 # paginate = 6
 paginate = 10

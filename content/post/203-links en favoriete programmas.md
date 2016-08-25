@@ -1,15 +1,11 @@
 +++
 date = "2015-03-01T00:00:00+02:00"
 draft = false
-title = "203 - Links en favoriete programma's"
-tags = ['linux', 'favorites']
+title = "203 - Favoriete websites"
+tags = ['linux', 'websites']
+toc = false
+updated = "2016-08-24"
 +++
-
-
-
-| Document info       |                   |
-|---------------------|-------------------|
-| Laatst bijgewerkt   | 2013-08           |
 
 
 # Een aantal links, naar handige websites.
@@ -32,9 +28,11 @@ http://www.tecmint.com/
 * TuxDiary, Linux, open source, command-line, leisure:
 https://tuxdiary.com/
 
-
 * Markdown Cheatsheet: 
 https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet
+
+* Het weer: 
+http://www.timeanddate.com/weather/netherlands/leeuwarden/ext
 
 
 # Favoriete programma's
