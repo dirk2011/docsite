@@ -20,6 +20,7 @@ Hugo-Octopress is a port of the classic [Octopress][octopress-link] theme to [Hu
 - [License page](#licensepage)
 - [Table of contents](#tableofcontents)
 - [Not Found or 404.html](#notfound)
+- [Taxonomy pages](#taxonomy)
 - [Issues/TODO](#issues)
 - [Attribution](#attribution)
 - [Ported by](#portedby)
@@ -341,16 +342,19 @@ There are two ways to enable Table of Contents:
 
 * Each post/page can have a variable named `toc` in its frontmatter. This needs to be set to `true`.
 
-
-    title: "title"
-    date: 2016-04-01T20:22:37-04:00
-    draft: false
-    toc: true
+```
+title: "title"
+date: 2016-04-01T20:22:37-04:00
+draft: false
+toc: true
+```
 
 * Global setting is available in the config file, `tableOfContents` under `[Params]` need to be set to `true`.
 
-    [Params]
-      tableOfContents = true
+```
+[Params]
+  tableOfContents = true
+```
 
 The `toc` variable in frontmatter has priority. If it is set `false` then the config file is ignored. It is recommended to not set use the config file and enable the ToC for individual pages. Otherwise, it can be enabled for all pages in the config file and disabled for specific pages using the frontmatter.
 
@@ -363,6 +367,19 @@ There are two optional parameters in the config file and both support markdown:
 * notFoundText: 404 page text
 
 If they are not set in the config file, a default page is generated.
+
+## <a name="taxonomy"></a>Taxonomy pages
+The theme can create pages that list all taxonomies (categories and tags) and their count. The taxonomy pages are at `baseURL/tags/` and `baseURL/categories`. This can be accomplished by adding `generateTaxonomyList = true` to the config file. By default the theme sorts the items by count. It can be changed to alphabetical by including `sortTaxonomyAlphabetical = true`.
+
+The switches are as follows:
+
+    [Params]
+      generateTaxonomyList = true
+
+      # This is not needed unless alphabetical sort is needed
+      # sortTaxonomyAlphabetical = true
+
+To revert back to ByCount sort, remove `sortTaxonomyAlphabetical` or set it to false.
 
 ## <a name="issues"></a>Issues/TODO
 
