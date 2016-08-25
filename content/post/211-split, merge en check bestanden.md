@@ -3,20 +3,16 @@ date = "2012-04-12T00:00:00+02:00"
 draft = false
 title = "211 - Split, merge en check van bestanden"
 tags = ['raspberry', 'linux']
+toc = false
+update = '2016-08-25'
 +++
 
 
-# Split, merge en check van bestanden
-
-| Document info       |                   |
-|---------------------|-------------------|
-| Laatst bijgewerkt   | 2012-04           |
-
-
 ## Inleiding
-
-Het opslitsen, weer samenvoegen van bestanden, en controleren of dat goed is gegaan is met linux niet zo moeilijk.
-Linux heeft een uitgebreide gereedschapskist waarin ook voor deze klus genoeg tools zitten. Bijvoorbeeld onderstaande.
+Het opslitsen, weer samenvoegen van bestanden, en controleren of dat goed is
+gegaan is met linux niet zo moeilijk.  Linux heeft een uitgebreide
+gereedschapskist waarin ook voor deze klus genoeg tools zitten. Bijvoorbeeld
+onderstaande.
 
 ## Binair splitsen van bestanden
 
@@ -37,10 +33,11 @@ In onderstaand voorbeeld wordt een mp3 bestand van ruim 100mb in stukken verdeel
 
 
 ## Checksums berekenen
-Met een checksum (controle getal) kan gecontroleerd worden of een bestand niet beschadigd is en het nog volledig is.
-Het is daarom handig na het splitsen checksums te berekenen, zodat na transport van de bestanden gecontroleerd kan
-worden of ze volledig zijn overgekomen.
-Er zijn verschillende utilities om een checksum te berekenen, met md5sum wordt een 128 bits checksum berekend.
+Met een checksum (controle getal) kan gecontroleerd worden of een bestand niet
+beschadigd is en het nog volledig is.  Het is daarom handig na het splitsen
+checksums te berekenen, zodat na transport van de bestanden gecontroleerd kan
+worden of ze volledig zijn overgekomen.  Er zijn verschillende utilities om een
+checksum te berekenen, met md5sum wordt een 128 bits checksum berekend.
 
 Voorbeeld
 ```bash
@@ -50,7 +47,7 @@ md5sum bestanden* > files.md5
 Verklaring | Toelichting
 ---------- | -----------
 md5sum     | het programma
-bestanden* | lijst van bestanden waarvan de checksum berekend moet worden
+bestanden\* | lijst van bestanden waarvan de checksum berekend moet worden
  >         | stuur de output ergens heen
 files.md5  | bestand waarin de berekende checksums worden opgeslagen.
 
@@ -60,7 +57,8 @@ Onderstaand wordt de checksum berekend van het originele bestand en de deelbesta
 
 
 ## Samenvoegen
-Het samenvoegen van de gesplitst bestanden kan bijvoorbeeld gedaan worden met cat.
+Het samenvoegen van de gesplitst bestanden kan bijvoorbeeld gedaan worden met
+`cat`.
 ```bash
 cat deelbestanden* > bestand
 ```
@@ -68,7 +66,7 @@ cat deelbestanden* > bestand
 Verklaring      | Toelichting
 --------------- | -----------
 cat             | het programma
-deelbestanden*  | spreekt voor zich
+deelbestanden\*  | spreekt voor zich
  >              | normaal gaat de output van cat naar het scherm, nu sturen we dat naar een bestand
 bestand         | het doelbestand, waarin alle deelbestanden waar samen komen
 
@@ -78,8 +76,8 @@ In onderstaand voorbeeld worden alle deelbestanden weer samengevoegd.
 
 
 ## Checksums controleren
-Na transport van de deelbestanden en het samenvoegen hiervan tot het originele bestand worden de bestanden
-gecontroleerd.
+Na transport van de deelbestanden en het samenvoegen hiervan tot het originele
+bestand worden de bestanden gecontroleerd.
 
 Voorbeeld
 ```bash
@@ -94,4 +92,8 @@ files.md5  | het bestand met de checksum
 
 
 ![linux](/img/211-4-md5sum.jpg)
+
+![linux](/img/logo_linux.jpg)
+
+* * *
 
