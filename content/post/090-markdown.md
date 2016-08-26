@@ -4,7 +4,7 @@ draft = false
 title = "090 - Markdown"
 tags = ['markdown', 'linux', 'hugo']
 categories = ['hugo']
-updated = "2016-08-24"
+updated = "2016-08-25"
 +++
 
 # Aantekeningen over markdown 
@@ -179,6 +179,21 @@ En dit is een regel.
 1. is een
 1. lijst
 ```
+
+* * * 
+
+## Emoji emoticons
+
+
+:smile:
+
+
+```bash
+:smile:
+```
+
+
+Bron: http://www.emoji-cheat-sheet.com
 
 
 * * * 

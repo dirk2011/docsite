@@ -4,7 +4,7 @@ draft = false
 title = "211 - Split, merge en check van bestanden"
 tags = ['raspberry', 'linux']
 toc = false
-update = '2016-08-25'
+updated = '2016-08-25'
 +++
 
 

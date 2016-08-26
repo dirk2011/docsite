@@ -12,6 +12,10 @@ theme = "hugo-octopress"
 # tijdelijke bestanden van vi
 ignoreFiles = ["\\.swp$"]
 
+# Enable Emoji emoticons support for page content.
+# # See www.emoji-cheat-sheet.com
+enableEmoji = true
+
 # Number of blog posts displayed in each page
 # paginate = 6
 paginate = 10
