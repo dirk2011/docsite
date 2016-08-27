@@ -2,7 +2,7 @@
 date = "2016-07-28T01:00:00+02:00"
 draft = false
 title = "084 - Hugo, static site generator"
-tags = ['website', 'hugo', 'linux', 'markdown']
+tags = ['hugo', 'linux', 'markdown']
 updated = "2016-08-20"
 categories = ['hugo', 'raspberry']
 +++

@@ -4,15 +4,10 @@ draft = false
 title = "201 - Element- en groepprefixen in Coda"
 tags = ['coda', 'sql', 'oracle', 'rapportages']
 categories = ['Coda']
-updated = "2016-08-03"
+updated = "2016-08-27"
 +++
 
 # Element- en groepprefixen in Coda
-
-
-| Document info       |                   |
-|---------------------|-------------------|
-| Laatst bijgewerkt   | 2012-03, 2016-07  |
 
 
 ## Inleiding
@@ -25,10 +20,13 @@ Prefix           | Toelichting
 Element DEB123   | element prefix: DEBxxx
 Groep RL004      | groep prefix: RLxxx
 
-Waarom dit onderscheid? Omdat aan de hand van het element- of groepprefix snel inzicht kan worden gekregen in het
-aantal elementen en groepen in de administratie, en snel gecontroleerd kan worden of elementen van de juiste groepen
-zijn voorzien. Groepen zijn naast elementen erg belangrijk in het systeem, indien groepen ontbreken bij elementen,
-zullen financiële rapportages niet volledig zijn. Dus is een periodieke controle hierop noodzakelijk.
+Waarom dit onderscheid? Omdat aan de hand van het element- of groepprefix snel
+inzicht kan worden gekregen in het aantal elementen en groepen in de
+administratie, en snel gecontroleerd kan worden of elementen van de juiste
+groepen zijn voorzien. Het is dus een manier om op hoofdlijnen naar elementen en
+groepen te kijken.  Groepen zijn naast elementen erg belangrijk in het systeem,
+indien groepen ontbreken bij elementen, zullen financiële rapportages niet
+volledig zijn. Dus is een periodieke controle hierop noodzakelijk.
 
 
 ## De Oracle functies

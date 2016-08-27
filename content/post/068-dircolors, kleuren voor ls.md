@@ -41,9 +41,9 @@ Neem dit commando op in het opstart bestand van bash: `.bashrc`.
 
 
 ## Een voorbeeld
-Het item `OTHER_WRITABLE` heeft betrekking op directories die voor andere
+Het item `OTHER_WRITABLE` heeft betrekking op directories die voor anderen
 muteerbaar zijn. Dit item heeft de volgende kleuren code gekregen `30;42`. In
-het bestand zit de regel er dan als volgt uit.
+het bestand ziet de regel er dan als volgt uit.
 ```bash
 OTHER_WRITABLE 30;42 # dir that is other-writable (o+w) and not sticky
 ```
@@ -53,7 +53,7 @@ OTHER_WRITABLE 30;42 # dir that is other-writable (o+w) and not sticky
 * De kleuren: 
 http://linux-sxs.org/housekeeping/lscolors.html
 
-* Dircolors informatie
+* Dircolors informatie: 
 http://unix.stackexchange.com/questions/94498/what-causes-this-green-background-in-ls-output
 
 
