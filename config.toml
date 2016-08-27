@@ -9,6 +9,12 @@ languageCode = "en-us"
 title = "dirk postma"
 theme = "hugo-octopress"
 
+## voor dropbox
+# relativeurls werken niet met dirkpostma.com, gaat fout met tags, tag wordt verdubbeld
+# relativeURLs = true
+# uglyurls werken niet met octopress, gaat fout met tags
+# uglyurls = true
+
 # tijdelijke bestanden van vi
 ignoreFiles = ["\\.swp$"]
 
