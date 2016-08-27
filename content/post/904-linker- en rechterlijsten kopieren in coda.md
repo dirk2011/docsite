@@ -1,10 +1,10 @@
 +++
 date = "2012-03-23T00:00:00+02:00"
 draft = false
-title = "202 - Linker- en rechterlijsten kopieren in Coda"
+title = "904 - Linker- en rechterlijsten kopieren in Coda"
 tags = ['coda', 'sql', 'oracle', 'scripts']
 categories = ['Coda'] 
-updated = "2016-08-03"
+updated = "2016-08-27"
 +++
 
 # Linker- en rechterlijsten kopieren in Coda
