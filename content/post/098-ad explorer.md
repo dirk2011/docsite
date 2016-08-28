@@ -6,7 +6,7 @@ tags = ["windows", "active directory"]
 title = "098 - Active Directory Explorer"
 toc = false
 type = "post"
-updated = "2016-08-26"
+updated = "2016-08-27"
 
 +++
 
@@ -32,10 +32,22 @@ Installeren is niet nodig, het betreft een `zip` bestand, dat moet uitgepakt
 worden en daarna is het programma klaar voor gebruik.
 
 
-## Schermafdruk
+## Inloggen
+![Schermafdruk](/img/098-adexplorer-1.jpg)
+Meestal kun je meteen op \<enter> drukken om in te loggen met je eigen account
+en hoef je niets in te vullen.
 
-![Schermafdruk](/img/098-adexplorer.jpg)
 
+## Zoeken
+Je kunt niet zomaar gaan zoeken, je moet eerst een zoek opdracht samenstellen.
+Dat is even uitzoeken. In mijn geval werkte het zoeken naar een `account` als
+volgt. 
+
+`Class` kies `user`, `Attribute` kies `Aanmeldingsnaam (van voor ...)`,
+`relation` kies `is`. Als laatste moet dan bij `Value` de gebruikersaccount
+worden ingevuld. 
+Druk vervolgens op `Add`, en op `Search`.
+![Schermafdruk](/img/098-adexplorer-2.jpg)
 
 * * *
 

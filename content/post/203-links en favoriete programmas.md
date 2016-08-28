@@ -31,6 +31,9 @@ https://tuxdiary.com/
 * Markdown Cheatsheet: 
 https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet
 
+* Opensource, online markdown editor voor bestanden in de cloud:
+http://dillinger.io/
+
 * Het weer: 
 http://www.timeanddate.com/weather/netherlands/leeuwarden/ext
 
