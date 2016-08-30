@@ -2,9 +2,9 @@
 date = "2015-03-01T00:00:00+02:00"
 draft = false
 title = "203 - Favoriete websites"
-tags = ['linux', 'websites']
+tags = ['linux', 'favorieten']
 toc = false
-updated = "2016-08-24"
+updated = "2016-08-28"
 +++
 
 

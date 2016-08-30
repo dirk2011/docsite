@@ -4,7 +4,7 @@ draft = false
 title = "021 - Vim, vi improved, een super editor"
 tags = ['vim', 'linux', 'markdown', 'raspberry']
 categories = ['linux']
-updated = '2016-08-20'
+updated = '2016-08-30'
 
 +++
 
@@ -631,8 +631,15 @@ output van het script te verwijderen en de code te herstellen.
 
 ## Bronnen
 
-* http://www.vim.org
-* http://usevim.com
+Vim heeft veel fans. Er zijn een aantal websites die allemaal over Vim gaan.
+
+* Website van Vim http://www.vim.org
+* Veel tips e.d. http://usevim.com
+* Een aparte website over kleuren schema's voor Vim http://vimcolors.com/
+* Een website helemaal over plugins voor Vim, met een rangorde van populariteit:
+  http://vimawesome.com/
 * http://vim.wikia.com/wiki/Vim_Tips_Wiki
 * http://www.thegeekstuff.com/tag/vi-vim-tips-and-tricks/
+
+* * *
 

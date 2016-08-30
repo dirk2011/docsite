@@ -12,10 +12,10 @@ updated = "2016-08-27"
 
 # Functietoetsen
 
-Het gebruik van functietoetsen in programma's kan het digitale leven een stuk
-minder vermoeiend en productiever maken. Jammer dat zo weinig gebruikers de tijd
-nemen om ze te leren en vervolgens te gebruiken. Ze doen daarmee zichzelf te
-kort.
+Het gebruik van functietoetsen in programma's op de PC kan het digitale leven
+een stuk minder vermoeiend en productiever maken. Jammer dat zo weinig
+gebruikers de tijd nemen om ze te leren en vervolgens te gebruiken. Ze doen
+daarmee zichzelf te kort.
 
 Met kennis van een paar kun je al veel vlotter werken met een aantal
 applicaties.

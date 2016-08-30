@@ -1,17 +1,13 @@
 +++
 date = "2016-07-31T00:00:00+02:00"
 draft = false
-title = "086 - Super cd met j van autojump"
+title = "086 - Autojump, super eenvoudig cd met j"
 tags = ['autojump', 'bash', '.bashrc', 'raspberry', 'linux']
 categories = ['linux']
+updated = '2016-08-28'
 +++
 
 # Autojump
-
-
-| Document info       |                   |
-|---------------------|-------------------|
-| Laatst bijgewerkt   | 2016-07           |
 
 
 ## Wat is het

@@ -6,7 +6,7 @@ tags = ["windows", "active directory"]
 title = "098 - Active Directory Explorer"
 toc = false
 type = "post"
-updated = "2016-08-27"
+updated = "2016-08-28"
 
 +++
 
