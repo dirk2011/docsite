@@ -2,9 +2,10 @@
 date = "2013-05-01T00:00:00+02:00"
 draft = false
 title = "902 - IBAN controle m.b.v. een Oracle functie"
-tags = ['coda', 'sql', 'oracle', 'rapportages', 'iban']
+tags = ['coda', 'sql', 'Oracle', 'rapportages', 'IBAN']
 categories = ['Coda']
-updated = '2016-08-27'
+updated = '2016-08-31'
+spelling = 1
 +++
 
 # IBAN controle met behulp van een Oracle functie
@@ -46,7 +47,7 @@ De controle functie en de benodigde onderdelen worden in de database geladen met
 ## Script: 01-ct_iban_info.sql 
 Dit script maakt onderstaande objecten in de database aan.
 
-Ojbect    | Toelichting
+Object    | Toelichting
 --------- | -----------
 iban_info | Tabel met per land een record, welke o.a. bevat ISO landcode en de lengte van het IBAN nummer
 iban_info_ui_001 | Unieke index op de tabel
@@ -68,7 +69,7 @@ en 3 een positief testresultaat.
 
 ## Functie gebruiken
 Het aanroepen van de functie gaat als volgt: `iban_check( <IBAN> )`
-Ouput van de functie is een probleem melding of de indicatie Oke. In een rapport of script is het dan mogelijk een
+Output van de functie is een probleem melding of de indicatie Oke. In een rapport of script is het dan mogelijk een
 lijstje te maken van IBAN nummers en het resultaat van de functie.
 
 
@@ -383,4 +384,5 @@ from dual ;
 
 ```
 
+* * *
 

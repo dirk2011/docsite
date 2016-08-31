@@ -4,10 +4,11 @@ draft = false
 title = "904 - Linker- en rechterlijsten kopieren in Coda"
 tags = ['coda', 'sql', 'oracle', 'scripts']
 categories = ['Coda'] 
-updated = "2016-08-27"
+updated = "2016-08-31"
+spelling = 1
 +++
 
-# Linker- en rechterlijsten kopieren in Coda
+# Linker- en rechterlijsten kopiëren in Coda
 
 
 | Document info       |                   |
@@ -22,11 +23,11 @@ je verschillende boekingsgangen kunt verwerken. Een rekeningschema bestaat meest
 rekeningnummers of -codes die achter elkaar worden gecodeerd. Zo ook in Coda, een rekening wordt in Coda echter een
 element genoemd.
 
-Combinaties van rekeningnummers waarop geboekt mag worden, moeten in andere paketten meestal vooraf worden aangemaakt,
-echter niet in Coda. In Coda werkt dat op een andere manier, met zogenaamde linker- en rechterlijsten, wordt vooaraf
+Combinaties van rekeningnummers waarop geboekt mag worden, moeten in andere pakketten meestal vooraf worden aangemaakt,
+echter niet in Coda. In Coda werkt dat op een andere manier, met zogenaamde linker- en rechterlijsten, wordt vooraf
 aangegeven op welke element combinaties geboekt mag worden. Deze lijsten worden per element vastgelegd.
 
-Zo’n lijst ziet er uit als een SQL-achtige expressie. Voorbeeld van een rechterlijst.
+Zo’n lijst ziet er uit als een sql achtige expressie. Voorbeeld van een rechterlijst.
 
 ![Voorbeeld](/img/202-1-coda-lijsten-02-voorbeeld-van-een-lijst.jpg)
 
@@ -43,7 +44,7 @@ worden gewenste boekingen geblokkeerd.
 Het zou handiger zijn om de elementen te kunnen labelen of groeperen naar soort, en per groep één keer een lijst in te
 brengen of te wijzigen.
 
-Voor zover ik weet is deze optie standaard niet aanwezig. Met een creatief idee, en met een sql-script kan dit vrij
+Voor zover ik weet is deze optie standaard niet aanwezig. Met een creatief idee, en met een sql script kan dit vrij
 eenvoudig gerealiseerd worden.
 
 
@@ -55,7 +56,7 @@ Stappen in coda
 
 ### Dummy groepen aanmaken
 
-Voor elke aparte lijst wordt een groep aangemaakt. De opbouw van de groepcode ziet er als volgt uit: DXLxxx
+Voor elke aparte lijst wordt een groep aangemaakt. De opbouw van de groepscode ziet er als volgt uit: DXLxxx
 
 Verklaring:
 
@@ -64,13 +65,14 @@ Verklaring:
 * L = lijst groep, vaste waarde
 * xxx = volgnummer
 
-Voorbeeld groep: D1L001, met als omschrijving: rechten/linkerlijst niveau 1.
+Voorbeeld groep: D1L001, met als omschrijving: rechten/linker lijst niveau 1.
 
 
 ### Dummy elementen aanmaken
 
-Het is niet mogelijk om aan een groep een lijst te knopen. Daarom wordt per groep een element aangemaakt, de codering
-van deze elementen is als volgt: DUMMYXRECHTERLIJSTxxx
+Het is niet mogelijk om aan een groep een lijst te knopen. Daarom wordt per
+groep een element aangemaakt, de codering van deze elementen is als volgt:
+DUMMYXRECHTERLIJSTxxx
 
 Verklaring:
 
@@ -81,14 +83,15 @@ Verklaring:
 
 Voorbeeld element: DUMMY1RECHTERLIJST001, met als omschrijving: Rechterlijst 1.
 
-De groepen en elementen zijn dummy genoemd omdat er niet opgeboekt gaat worden. Deze elementen en groepen hoeven niet
-aan elkaar gekoppeld te worden. 
+De groepen en elementen zijn dummy genoemd omdat er niet op geboekt gaat worden.
+Deze elementen en groepen hoeven niet aan elkaar gekoppeld te worden. 
 
 
 ### Elementen van een dummy groep voorzien
 
-Nu dient aan elk element waarvan de lijst automatisch onderhouden moet worden, een dummy groep gekoppeld te worden.
-Onderstaand een voorbeeld van het element 411010, waaraan o.a. groep D1L001 is gekoppeld.
+Nu dient aan elk element waarvan de lijst automatisch onderhouden moet worden,
+een dummy groep gekoppeld te worden.  Onderstaand een voorbeeld van het element
+411010, waaraan o.a. groep D1L001 is gekoppeld.
 
 ![Voorbeeld](/img/202-2-coda-lijsten-03-element-en-groepen.jpg)
 
@@ -97,7 +100,7 @@ Onderstaand een voorbeeld van het element 411010, waaraan o.a. groep D1L001 is g
 
 Als bovenstaande is ingeregeld kan het onderhoud van de lijsten bij de elementen geautomatiseerd worden.
 
-Een SQL procedure gaat er nu voor zorgen dat, per element:
+Een sql procedure gaat er nu voor zorgen dat, per element:
 
 * de oude lijst wordt verwijderd
 * de nieuwe lijst wordt toegevoegd
@@ -141,7 +144,7 @@ gedownload worden in een zip bestand.
 
 
 ## Opmerkingen
-De schermafdrukken van de gegevens zijn gemaakt met een cognos rapport. De huidige procedure werkt alleen voor niveau 1
+De schermafdrukken van de gegevens zijn gemaakt met een Cognos rapport. De huidige procedure werkt alleen voor niveau 1
 over 3 verschillende bedrijven heen.
 
 
@@ -153,4 +156,5 @@ Scripts een tijdje terug gebouwd, scripts werken echter nog steeds in Coda 12.
 Deze software mag gratis gebruikt worden, maar het gebruik is geheel voor eigen risico. Deze software mag worden
 aangepast en weggegeven, maar mag niet commercieel geëxploiteerd worden.
 
+* * *
 

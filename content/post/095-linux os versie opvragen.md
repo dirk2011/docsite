@@ -4,7 +4,8 @@ draft = false
 title = "095 - Linux os versie opvragen, /etc/os-release"
 tags = ['raspberry', 'linux']
 categories = ['linux'] 
-
+updated = "2016-08-31"
+spelling = 1
 +++
 
 
@@ -52,5 +53,5 @@ SUPPORT_URL="http://www.raspbian.org/RaspbianForums"
 BUG_REPORT_URL="http://www.raspbian.org/RaspbianBugs"
 ```
 
-![linux](/img/logo_linux.jpg)
+![Linux](/img/logo_linux.jpg)
 

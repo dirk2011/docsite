@@ -4,13 +4,14 @@ draft = false
 title = "203 - Favoriete websites"
 tags = ['linux', 'favorieten']
 toc = false
-updated = "2016-08-28"
+updated = "2016-08-31"
+spelling = 1
 +++
 
 
 # Een aantal links, naar handige websites.
 
-* Handige tips voor beginners en gevorderden met linux: 
+* Handige tips voor beginners en gevorderden met Linux: 
 https://sites.google.com/site/computertip/
 
 * nixCraft, Linux/Unix voor sysadmins: 

@@ -4,20 +4,21 @@ draft = false
 title = "094 - Jekyll op de Raspberry"
 tags = ['raspberry', 'linux', 'jekyll', 'markdown', 'hugo']
 categories = ['Raspberry']
-updated = '2016-08-27'
+updated = '2016-08-31'
+spelling = 1
 +++
 
 # Jekyll installeren
 
-Gohugo werkt uitstekend om een static website te genereren. Wil echter toch ook
+Hugo werkt uitstekend om een statische website te genereren. Wil echter toch ook
 Jekyll eens uit proberen. Volgens de website
 [Staticgen](https://www.staticgen.com/) zou Jekyll momenteel de nummer 1 tool
 zijn.
 
 Jekyll op de Raspberry installeren zou nu (18-08-2016) niet erg
-ingewikkeld meer moeten zijn. De ruby versie in distributie Raspbian Jessie
+ingewikkeld meer moeten zijn. De Ruby versie in distributie Raspbian Jessie
 (versie 8) zou actueel genoeg moeten zijn. Ruby versie 2 of hoger is nodig voor
-het draaien van Jekyll 3 of hoger. Op de Raspberrry staat versie 2.1.5.
+het draaien van Jekyll 3 of hoger. Op de Raspberry staat versie 2.1.5.
 
 De stappen uitgevoerd beschreven op de website van Raspberrypi.org. Eerst
 rubygems geïnstalleerd met `sudo apt-get install rubygems` en daarna Jekyll
@@ -62,7 +63,7 @@ Eerst de installaties van gem versie 1.8 opgeruimd. Wat geïnstalleerd is, maak 
 zichtbaar met `gem list`. Opruimen gaat met `sudo gem uninstall <package>`.
 
 Opnieuw geprobeerd te installeren. Wederom geen succes. Zoeken op internet
-levert op, dat developer versie van ruby ook geïnstalleerd moeten worden. Dat
+levert op, dat developer versie van Ruby ook geïnstalleerd moeten worden. Dat
 gedaan met `sudo apt-get install ruby-dev`.
 
 Daarna de installatie van Jekyll nogmaals uitgevoerd, met wel de goede gem
@@ -94,9 +95,9 @@ software.
 [bron](http://stackoverflow.com/questions/19061774/cannot-load-such-file-bundler-setup-loaderror).
 
 Wederom proberen de website te genereren. En wederom een foutmelding. Nu lijkt
-het er op dat het theme niet is geïnstalleerd, foutmelding geeft aan dat gem
+het er op dat het thema niet is geïnstalleerd, foutmelding geeft aan dat gem
 minima niet gevonden kan worden.
-Gekeken op de github pagina van het theme. Het is wel geïnstalleerd echter moet
+Gekeken op de Github pagina van het thema. Het is wel geïnstalleerd echter moet
 nog een opdracht worden uitgevoerd: `bundle`,
 [bron](https://github.com/jekyll/minima).
 
@@ -139,7 +140,7 @@ Voor het verversen van deze ene pagina waren 1.7 seconden nodig.
 Jekyll installeren was lang niet zo eenvoudig als Hugo. Er zijn veel
 afhankelijkheden van extra benodigde software. Jekyll is een zwaardere oplossing
 dan Hugo.  
-Inhoudelijk wel benieuwd welke themes er zijn en hoe eenvoudig of moeilijk
+Inhoudelijk wel benieuwd welke thema's er zijn en hoe eenvoudig of moeilijk
 content te beheren is.
 
 

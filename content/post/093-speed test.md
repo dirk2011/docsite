@@ -5,15 +5,17 @@ title = "093 - Speed test met wget en time"
 tags = ['raspberry', 'linux', 'tools', 'speed test', 'wget', 'time']
 categories = ['linux']
 toc = false
+updated = "2016-08-31"
+spelling = 1
 +++
 
 # Speed test 
 
 Speedtest is een website waar je de snelheid van je internet verbinding kunt
-testen. Deze website benader je van uit je browser. Als linux gebruiker wil ik
+testen. Deze website benader je van uit je browser. Als Linux gebruiker wil ik
 een testje kunnen doen vanaf de command line.
 
-Deze oplossing biedt niet hetzelfde als speedtest, voor mij is het voldoende. Op
+Deze oplossing biedt niet hetzelfde als Speedtest, voor mij is het voldoende. Op
 deze website
 [glasvezel](http://www.glasvezel.nu/speedtest-servers-100mb-1000mb-bin) zijn een
 aantal bestanden te vinden die voor een download testje met wget gebruikt kunnen
@@ -59,5 +61,5 @@ Met dank aan Hak5 voor het idee.
 * test bestanden http://www.glasvezel.nu/speedtest-servers-100mb-1000mb-bin
 * Hak5 https://www.youtube.com/watch?v=vrhesofLIcA
 
-![linux](/img/logo_linux.jpg)
+![Linux](/img/logo_linux.jpg)
 

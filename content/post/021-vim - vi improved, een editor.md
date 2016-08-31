@@ -4,7 +4,8 @@ draft = false
 title = "021 - Vim, vi improved, een super editor"
 tags = ['vim', 'linux', 'markdown', 'raspberry']
 categories = ['linux']
-updated = '2016-08-30'
+updated = '2016-08-31'
+spelling = 1
 
 +++
 
@@ -58,17 +59,17 @@ Bron: http://www.linux.org/threads/set-your-default-editor-for-things-like-cront
 ## Gvim
 Gvim is een grafische versie van vim. Het werkt op dezelfde manier als vim.  De
 kleuren zijn beter te configureren. Eveneens kan het lettertype aangepast
-worden, iets dat met vim niet kan.  Start gvim op uit het menu, of door op de
-prompt in te typen: gvim.
+worden, iets dat met vim niet kan.  Start Gvim op uit het menu, of door op de
+prompt in te typen: Gvim.
 
-Voor gvim is een aanvullend configuratie bestand aanwezig in de homedirectory
+Voor Gvim is een aanvullend configuratie bestand aanwezig in de home directory
 van de gebruiker, dat heet: `.gvimrc`
 
 
 
 ## Python ondersteuning met vim-nox
-Om de vele plugins in vim te kunnen gebruiken is het nodig dat vim gecompileerd
-is met python support. Voor de raspberry is dat niet het geval.  Installeer
+Om de vele plug-ins in vim te kunnen gebruiken is het nodig dat vim gecompileerd
+is met python support. Voor de Raspberry is dat niet het geval.  Installeer
 daarom vim-nox, daarmee wordt de ondersteuning dan geregeld.
 ```bash
 sudo apt-get install vim-nox
@@ -149,7 +150,7 @@ F, \<c>  | zoek terug naar \<c> op huidige regel
 
 ### Window management
 Een window is wat anders dan een geopend bestand in Vim. Je kunt meerdere
-windows openen voor een zelfde bestand, handig als het om grote bestanden gaat.
+Windows openen voor een zelfde bestand, handig als het om grote bestanden gaat.
 
 Opdracht | Verklaring
 ------- | ----------
@@ -161,7 +162,7 @@ ctrl w, \<m> | maak andere window actief, m = richting
 
 ### Springen tussen, en van, naar ()[]{}<>
 Met % kan gesprongen worden naar het begin teken.  Indien de cursor staat op
-begin of eind teken wordt de cursor verplaatst naar tegen overgestelde teken.
+begin of eind teken wordt de cursor verplaatst naar tegenovergestelde teken.
 Werkt ook over meerdere regels heen. Handig voor het programmeren van code.
 
 
@@ -295,7 +296,7 @@ Er zijn nog veel commando's voor het werken met buffers.
 
 ## Registers
 Kort en zeker niet volledig.  Registers zijn een soort klemborden. Er zijn named
-en unnamed registers. De informatie van reigsters blijft aanwezig, ook nadat Vim
+en unnamed registers. De informatie van registers blijft aanwezig, ook nadat Vim
 wordt afgesloten.
 
 Opdracht | Verklaring
@@ -355,7 +356,7 @@ een document en zelfs naar verschillende documenten.
 Opdracht | Verklaring
 -------- | ----------
 m<teken> | Bijvoorbeeld ma, de markering a wordt gemaakt.
-'<teken> | ' gevolgd door een spatie, met teken, keer terug naar de marking
+'<teken> | ' gevolgd door een spatie, met teken, keer terug naar de markering
 a-z      | Markeringen in het huidige document, local bookmarks
 A-Z      | Markeringen over verschillende documenten heen, global bookmarks
 :marks   | Overzicht van alle markeringen, er kunnen ook letters worden opgegeven, gescheiden door een spatie
@@ -455,11 +456,11 @@ apt-get install exuberant-ctags
 Tags bestand genereren  
 De vim plugin kan on-the-fly de tags genereren maar dat werkt niet indien
 definities staan in andere bestanden. Daarvoor is een bestand nodig waar alle
-tags instaan, generer dat als volgt.
+tags instaan, genereer dat als volgt.
 ```bash
 ctags -R *.py
 ```
-`-R` betekent verwerk ook subdirectories, \*.py betekent behandel alle python
+`-R` betekent verwerk ook subdirectory's, \*.py betekent behandel alle python
 bestanden.
 
 Taglist installeren  
@@ -511,8 +512,8 @@ Bronnen
 
 
 ### Github
-Op github zijn vele plugins voor Vim te vinden. Downloaden gaat eenvoudig. Pak
-het https adres van een pagina, kopieer dit naar het klemboard (ctrl-c).
+Op Github zijn vele plugins voor Vim te vinden. Downloaden gaat eenvoudig. Pak
+het https adres van een pagina, kopieer dit naar het klembord (ctrl-c).
 
 In een shell type het volgende:
 ```vim
@@ -525,7 +526,7 @@ En de code wordt gedownload.
 
 ### Editing tips
 
-Progammeren is wat anders dan een tekst schrijven. De regel lengte heb ik daarom
+Programmeren is wat anders dan een tekst schrijven. De regel lengte heb ik daarom
 voor markdown files korter geconfigureerd. Toegevoegd aan `vimrc`:
 ```vim
 autocmd bufreadpre *.md setlocal textwidth=80
@@ -538,7 +539,7 @@ Formatoptions kunnen als volgt gecontroleerd worden.
 ```
 
 Als een stuk tekst nu een rommeltje is geworden dan kan dit eenvoudig worden
-aangepast door het eerst te selecteren en vervolgens opnieuw te formateren met
+aangepast door het eerst te selecteren en vervolgens opnieuw te formatteren met
 `gq`. 
 
 
@@ -576,10 +577,10 @@ Een geweldige tip!
 
 ### Taglist plugin configureren voor markdown bestanden
 
-Nadat de taglist plugin is geïnstalleerd moeten nog wat aanvullende configuratie
+Nadat de Taglist plugin is geïnstalleerd moeten nog wat aanvullende configuratie
 werkzaamheden plaatsvinden. 
 
-Edit het bestand `$HOME/.ctags` in de homedirectory dus, en voeg daar het volgende
+Edit het bestand `$HOME/.ctags` in de home directory dus, en voeg daar het volgende
 aan toe.
 ```vim
 --langdef=markdown
@@ -599,13 +600,13 @@ geconfigureerd is of voeg aan `.vimrc` het volgende toe.
 au BufNewFile,BufRead *.md set filetype=markdown
 ```
 
-En als laatste moet er dan nog een stukje configuratie van de taglist plugin
+En als laatste moet er dan nog een stukje configuratie van de Taglist plugin
 gebeuren in het bestand `.vimrc` voeg het volgende toe.
 ```vim
 let g:tlist_markdown_settings = 'markdown;h:Headlins'
 ```
 
-Hierna herkent de taglist plugin ook markdown bestanden.
+Hierna herkent de Taglist plugin ook markdown bestanden.
 
 Bron: https://github.com/hupili/evermd/tree/master/doc/howto-markdown-in-vim
 

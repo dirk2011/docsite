@@ -4,13 +4,14 @@ draft = false
 title = "097 - Octopress een thema voor Hugo"
 tags = ['raspberry', 'linux', 'hugo', 'octopress']
 categories = ['Hugo']
-updated = "2016-08-24"
+updated = "2016-08-31"
 toc = false
+spelling = 1
 +++
 
 ## Octopress een andere thema voor Hugo
 
-Zag een ander thema voor Hugo. Tot nu toe thema Hyde Y gebruikt dat heeft een
+Zag een ander thema voor Hugo. Tot nu toe thema Hyde-Y gebruikt dat heeft een
 modern uiterlijk en werkt prima op mijn tablet en Pc. Op de Pc ziet het er echter
 wat "kaal" uit.
 Octopress is wat meer klassiek van opzet, meer geschikt voor weergave op een Pc
@@ -33,7 +34,7 @@ git clone https://github.com/parsiya/Hugo-Octopress.git
 ## Configuratie
 Nieuw configuratie voor de website aangemaakt. In plaats van `config.toml` ga ik
 het bestand `go-octopress.toml` gebruiken. Handig om te switchen tussen
-verschillende configuraties en themas. 
+verschillende configuraties en thema's. 
 
 Dus dan ook een nieuw shell script aangemaakt om de nieuwe configuratie op te
 starten `go-octopress.sh`. Met daarin toegevoegd aan de opstart regel van Hugo: 
@@ -45,5 +46,5 @@ starten `go-octopress.sh`. Met daarin toegevoegd aan de opstart regel van Hugo:
 * Octopress, https://github.com/parsiya/Hugo-Octopress
 
 
-![linux](/img/logo_linux.jpg)
+![Linux](/img/logo_linux.jpg)
 

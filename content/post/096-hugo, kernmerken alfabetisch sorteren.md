@@ -4,10 +4,11 @@ draft = false
 title = "096 - Hugo, kenmerken alfabetisch sorteren"
 tags = ['Hugo', 'Hyde Y', 'linux']
 categories = ['Hugo']
-updated = "2016-08-20"
+updated = "2016-08-31"
+spelling = 1
 +++
 
-Aan artikelen kunnen in Hugo kenmerken worden toegekend, ook wel taxonmien
+Aan artikelen kunnen in Hugo kenmerken worden toegekend, ook wel taxonomieën
 genoemd. Hugo maakt vervolgens lijstjes hiervan, zodat artikelen via kenmerken
 kunnen worden terug gevonden.   
 Standaard sorteert het door mij gebruikte template Hyde-Y de kenmerken op meest
@@ -62,5 +63,5 @@ door
 
 Bron: https://gohugo.io/taxonomies/ordering/
 
-![linux](/img/logo_linux.jpg)
+![Linux](/img/logo_linux.jpg)
 

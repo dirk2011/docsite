@@ -6,8 +6,8 @@ tags = ["windows", "active directory"]
 title = "098 - Active Directory Explorer"
 toc = false
 type = "post"
-updated = "2016-08-28"
-
+updated = "2016-08-30"
+spelling = 1
 +++
 
 ## Active Directory (AD)
@@ -22,9 +22,9 @@ gebruikers, groepen, rechten, servers, etc. in worden opgeslagen.
 ## Active Directory Explorer
 
 Zo een grote verzameling van (bedrijfs)gegevens is niet alleen voor de ICT afdeling van
-belang maar ook interresant voor bijvoorbeeld functionele beheerders. 
+belang maar ook interessant voor bijvoorbeeld functionele beheerders. 
 
-Microsoft biedt op haar website een gratis tooltje aan waarmee je de AD kunt verkennen.
+Microsoft biedt op haar website een gratis tool aan waarmee je de AD kunt verkennen.
 Het biedt eveneens een optie om naar gegevens te zoeken. Het programma is
 [hier](https://technet.microsoft.com/en-us/sysinternals/adexplorer.aspx) te
 vinden.
@@ -44,7 +44,7 @@ Dat is even uitzoeken. In mijn geval werkte het zoeken naar een `account` als
 volgt. 
 
 `Class` kies `user`, `Attribute` kies `Aanmeldingsnaam (van voor ...)`,
-`relation` kies `is`. Als laatste moet dan bij `Value` de gebruikersaccount
+`relation` kies `is`. Als laatste moet dan bij `Value` de gebruikers account
 worden ingevuld. 
 Druk vervolgens op `Add`, en op `Search`.
 ![Schermafdruk](/img/098-adexplorer-2.jpg)

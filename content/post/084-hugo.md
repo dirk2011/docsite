@@ -3,11 +3,12 @@ date = "2016-07-28T01:00:00+02:00"
 draft = false
 title = "084 - Hugo, static site generator"
 tags = ['hugo', 'linux', 'markdown']
-updated = "2016-08-20"
 categories = ['hugo', 'raspberry']
+updated = "2016-08-31"
+spelling = 1
 +++
 
-# Hugo, static site generator
+# Hugo, statische site generator
 
 
 ## Info
@@ -15,7 +16,7 @@ Hugo is een programma om een website mee op te zetten. Het kan een prima
 alternatief zijn voor WordPress.
 
 De artikelen (content) worden geschreven in markdown (.md) bestanden.
-Vervolgens wordt een statische website gegenereert.  De website laadt daardoor
+Vervolgens wordt een statische website genereert.  De website laadt daardoor
 erg snel, er is geen gedoe meer met databases, php, etc.  Het editen van de
 artikelen kan offline gebeuren m.b.v. een tekst editor.
 
@@ -27,7 +28,7 @@ Als je klaar bent met editen, genereer je je website, en kun je deze uploaden
 naar een webserver, zodat de hele wereld je site kan zien.
 
 
-## Programma downloaden voor de raspberry
+## Programma downloaden voor de Raspberry
 Er is een speciale package beschikbaar voor de Raspberry.
 Ga naar deze [pagina](https://github.com/spf13/hugo/releases)
 download dit bestand `hugo_0.16-1_armhf.deb`, of een nieuwere versie.
@@ -54,7 +55,7 @@ cd testsite
 ```
 
 
-## hyde-y thema installeren
+## Hyde-Y thema installeren
 Ga naar de directory waar de thema's in worden opgeslagen.
 ```bash
 cd themes
@@ -68,7 +69,7 @@ worden.
 
 
 ## Eerste posting aanmaken
-Ga terug naar de rootdirectory van de website. 
+Ga terug naar de root directory van de website. 
 ```bash
 cd ..
 ```
@@ -88,8 +89,8 @@ Plaats in de map `/static` het bestand met als naam: `favicon.png`.
 
 
 ## Conclusie
-Hugo is een uistekend programma voor het opzetten van een website. Het programma
-is eenvoudig te installeren en kan prima draaien op een Raspberry. Op
+Hugo is een uitstekend programma voor het opzetten van een website. Het
+programma is eenvoudig te installeren en kan prima draaien op een Raspberry. Op
 de website van het programma is veel documentatie terug te vinden.
 
 
@@ -97,6 +98,6 @@ de website van het programma is veel documentatie terug te vinden.
 
 * Hugo, http://gohugo.io/
 * Hugo quickstart, http://gohugo.io/overview/quickstart/
-* Hyde-y theme, http://themes.gohugo.io/hyde-y/
+* Hyde-Y thema, http://themes.gohugo.io/hyde-y/
 
 

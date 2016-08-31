@@ -2,17 +2,18 @@
 categories = ["Windows"]
 date = "2016-08-27T10:13:24+02:00"
 draft = false
-tags = ["windows", "linux"]
+tags = ["Windows", "Linux"]
 title = "099 - Windows functietoetsen"
 toc = true
 type = "post"
-updated = "2016-08-27"
+updated = "2016-08-30"
+spelling = 1
 +++
 
 
 # Functietoetsen
 
-Het gebruik van functietoetsen in programma's op de PC kan het digitale leven
+Het gebruik van functietoetsen in programma's op de Pc kan het digitale leven
 een stuk minder vermoeiend en productiever maken. Jammer dat zo weinig
 gebruikers de tijd nemen om ze te leren en vervolgens te gebruiken. Ze doen
 daarmee zichzelf te kort.
@@ -24,7 +25,7 @@ applicaties.
 
 Functietoets | Doel
 ------------ | ------------------------
-ctrl-c       | geselecteerde tekst of object kopieren naar het klembord
+ctrl-c       | geselecteerde tekst of object kopiëren naar het klembord
 ctrl-v       | inhoud van het klembord plakken
 ctrl-x       | selectie wissen naar het klembord
 ctrl-s       | opslaan

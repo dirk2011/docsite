@@ -2,9 +2,10 @@
 date = "2016-08-06T00:00:00+02:00"
 draft = false
 title = "901 - Elfproef"
-tags = ['coda', 'oracle', 'rapportages', 'elfproef']
+tags = ['coda', 'Oracle', 'rapportages', 'elfproef']
 categories = ['coda']
-updated = '2016-08-27'
+updated = '2016-08-31'
+spelling = 1
 +++
 
 # Elfproef
@@ -20,7 +21,7 @@ fout waren. De door ons gebruikte software controleerde hier niet op bij de
 invoer.
 
 ## Oracle functie
-Onderstaand de oracle functie. 
+Onderstaand de Oracle functie. 
 
 ```sql
 CREATE OR REPLACE function lee_bankelfproef (extern_rekening char)
@@ -65,4 +66,5 @@ select lee_bankelfproef('123456789') from dual ;
 
 Vervolgens wordt de waarde `goed` of `fout` teruggegeven.
 
+* * *
 
