@@ -293,6 +293,43 @@ Idee? Maak onderstaande sneltoets aan om eenvoudig te switchen
 Er zijn nog veel commando's voor het werken met buffers.
 
 
+## Spellingscontrole
+
+Spellingscontrole aanzetten en taal instellen op Nederlands gaat als volgt.
+```vim
+:set spell
+:set spellang=nl
+```
+Dit is eenmalig. Voor markdown bestanden wil ik dat de spellingscontrole
+automatisch wordt aangezet. Dus de volgende 2 regels toegevoegd aan het .vimrc
+bestand.
+```vim
+autocmd FileType markdown setlocal spell
+autocmd FileType markdown setlocal spelllang=nl
+```
+
+De spellingscontrole bestanden voor Nederlands waren niet aanwezig in mijn Vim
+installatie. Vim bood aan deze te downloaden, hetgeen met succes werd
+uitgevoerd.
+
+Opdracht | Verklaring
+-------- | -------------------
+z=       | Lijst met suggesties om huidig woord te verbeteren
+zg       | Voeg woord toe aan de woordenlijst
+zug      | Verwijder woord van de woordenlijst
+zw       | Voeg woord toe, aan de foute woorden? Mee oefenen.
+]s       | Volgend fout gespeld woord
+[s       | Vorige fout gespeld woord
+
+Dit zijn slechts enkele spellingscontrole commando's.
+
+
+Bronnen
+
+* http://vimcasts.org/episodes/spell-checking/
+* en uiteraard de Vim help
+
+
 
 ## Registers
 Kort en zeker niet volledig.  Registers zijn een soort klemborden. Er zijn named
