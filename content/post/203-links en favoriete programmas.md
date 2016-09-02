@@ -4,7 +4,7 @@ draft = false
 title = "203 - Favoriete websites"
 tags = ['linux', 'favorieten']
 toc = false
-updated = "2016-08-31"
+updated = "2016-09-02"
 spelling = 1
 +++
 
@@ -29,6 +29,9 @@ http://www.tecmint.com/
 * TuxDiary, Linux, open source, command-line, leisure:
 https://tuxdiary.com/
 
+* BinaryTides, Genuine how-to guides on Linux, Ubuntu and FOSS:
+http://www.binarytides.com/
+
 * Markdown Cheatsheet: 
 https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet
 
@@ -37,7 +40,6 @@ http://dillinger.io/
 
 * Het weer: 
 http://www.timeanddate.com/weather/netherlands/leeuwarden/ext
-
 
 # Favoriete programma's
 
