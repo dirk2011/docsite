@@ -2,22 +2,19 @@
 date = "2015-03-01T00:00:00+02:00"
 draft = false
 title = "001 - Raspberry image installeren"
-tags = ['raspberry', 'linux']
+tags = ['Raspberry', 'Linux']
 categories = ['Raspberry']
+updated = "2016-09-04"
+toc = false
 +++
 
 # Raspberry image installeren
 
 
-| Document info       |                   |
-|---------------------|-------------------|
-| Laatst bijgewerkt   | 2015, 2016-03     |
-
-
 De Raspberry Pi heeft geen hard disk, maar gebruikt een flash geheugen kaartje
 om al zijn bestanden op te slaan. Een geheugen kaartje moet van een distributie
 worden voorzien, daarna  kan de Raspberry computer hiervan op starten.  Er zijn
-verschillende distrubities. Ik gebruik de distributie Raspbian. 
+verschillende distributies. Ik gebruik de distributie Raspbian. 
 
 Download de laatste versie van Raspbian hier: https://www.raspberrypi.org/downloads/
 
@@ -31,7 +28,7 @@ Stop de sd kaart in de computer, zoek uit hoe de memory card gemount is, doe:
 ```bash
 df -h
 ```
-Dan is deze info nodig, dus het volgcijfer niet:
+Dan is deze info nodig, dus het volg cijfer niet:
 ```bash
 /dev/sdh
 ```
@@ -60,5 +57,7 @@ Referentie:
 http://www.raspberrypi.org/documentation/installation/installing-images/linux.md
 
 
-![linux](/img/logo_linux.jpg)
+![Linux](/img/logo_linux.jpg)
+
+* * *
 
