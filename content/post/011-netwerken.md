@@ -4,7 +4,7 @@ draft = false
 title = "011 - Netwerken"
 tags = ['Linux', 'Raspberry', 'netstat', 'route', 'ifconfig', 'bmon', 'tcptrack', 'iftop', 'nethogs', 'ss']
 categories = ['Linux']
-updated = '2016-09-04'
+updated = '2016-09-06'
 spelling = 1
 +++
 

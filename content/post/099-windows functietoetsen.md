@@ -6,7 +6,7 @@ tags = ["Windows", "Linux"]
 title = "099 - Windows functietoetsen"
 toc = true
 type = "post"
-updated = "2016-08-30"
+updated = "2016-09-06"
 spelling = 1
 +++
 
@@ -22,40 +22,44 @@ Met kennis van een paar kun je al veel vlotter werken met een aantal
 applicaties.
 
 ## De meest voorkomende
+Deze functietoetsen kunnen in veel applicaties gebruikt worden. Ctrl-f (zoeken) 
+bijvoorbeeld is handig in Word- en Excel documenten, maar ook in PDF bestanden
+en op webpagina's.
 
 Functietoets | Doel
 ------------ | ------------------------
-ctrl-c       | geselecteerde tekst of object kopiëren naar het klembord
-ctrl-v       | inhoud van het klembord plakken
-ctrl-x       | selectie wissen naar het klembord
-ctrl-s       | opslaan
-ctrl-f       | zoeken
-ctrl-a       | selecteer alles
-ctrl-p       | printen
-ctrl-z       | laatste handeling ongedaan maken, undo
+ctrl-c       | Geselecteerde tekst of object kopiëren naar het klembord
+ctrl-v       | Inhoud van het klembord plakken
+ctrl-x       | Selectie wissen naar het klembord
+ctrl-s       | Opslaan
+ctrl-f       | Zoeken
+ctrl-a       | Selecteer alles
+ctrl-p       | Printen
+ctrl-z       | Laatste handeling ongedaan maken, undo
 
 
 ## Excel, rijen en kolommen
 
 Als je alle dagen met Excel werkt, is het wel handig deze te gebruiken om rijen
-en kolommen toe te voegen of te verwijderen.
+en kolommen toe te voegen en te verwijderen.
 
 Functietoets | Doel
 ------------ | ------------------------
-ctrl-spatiebalk | selecteer een kolom
-shift-spatiebalk | selecteer een rij
-ctrl-plus | nadat een selectie gemaakt is, invoegen van een rij of kolom
-ctrl-min  | nadat een selectie gemaakt is, verwijderen van een rij of kolom
+ctrl-spatiebalk  | Selecteer een kolom
+shift-spatiebalk | Selecteer een rij
+ctrl-plus | Nadat een selectie gemaakt is, invoegen van een rij of kolom
+ctrl-min  | Nadat een selectie gemaakt is, verwijderen van een rij of kolom
 
 
-## Excel, opmaken als getal
+## Excel, meer functietoetsen
 
 Functietoets | Doel
 ------------ | ------------------------
-ctrl-shift-1 | selectie opmaken als getal, met punt voor de 1000-tallen en 2 decimalen
+ctrl-shift-1 | Selectie opmaken als getal, met punt voor de 1000-tallen en 2 decimalen
+ctrl-pgup / ctrl-pgdn | Vorige, volgend werkblad
 
 
-![linux](/img/logo_linux.jpg)
+![Linux](/img/logo_linux.jpg)
 
 * * *
 

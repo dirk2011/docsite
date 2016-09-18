@@ -135,25 +135,35 @@ z, \<enter> | herpositioneer huidige regel, op 1e regel in het scherm
 z, –       | herpositioneer huidige regel, op laatste regel in het scherm
 z, z       | herpositioneer huidige regel, in het midden, zelfde kolom!
 
-### G commando's
-Opdracht | Verklaring
-------- | ----------
-G       | Ga naar einde van het bestand
-g, g    | Ga naar begin van het bestand
-\<n>, G  | Ga naar regel \<n>
 
-### F, zoeken op dezelfde regel
+### G, goto commando's
 Opdracht | Verklaring
-------- | ----------
+-------- | ----------
+G        | Ga naar einde van het bestand
+g, g     | Ga naar begin van het bestand
+\<n>, G  | Ga naar regel \<n>, alternatief: \<n>gg
+
+Ook handig zijn hiermee de volgende opdrachten.
+
+Opdracht | Verklaring
+-------- | ----------
+ctrl-o   | spring terug naar vorige positie
+ctrl-i   | spring naar volgende positie
+
+
+### F, find = zoeken op dezelfde regel
+Opdracht | Verklaring
+-------- | ----------
 f, \<c>  | zoek vooruit naar  \<c> op huidige regel
 F, \<c>  | zoek terug naar \<c> op huidige regel
+
 
 ### Window management
 Een window is wat anders dan een geopend bestand in Vim. Je kunt meerdere
 Windows openen voor een zelfde bestand, handig als het om grote bestanden gaat.
 
-Opdracht | Verklaring
-------- | ----------
+Opdracht  | Verklaring
+--------- | ----------
 ctrl w, c | Close huidige window
 ctrl w, v | split window verticaal
 ctrl w, s | split window horizontaal
@@ -224,13 +234,14 @@ worden met put.
 
 
 ### Zoeken
+Zoeken begint vanaf huidige de positie.
 
 Opdracht | Verklaring
 -------- | ----------
-a        | Type de te zoeken tekst en druk op enter
 *        | Snel zoeken, zoek huidige woord op in de tekst
-\#       | Snel zoeken, zoek vorige identieke woord op
-n, N     | Verder zoeken, N volgende, n vorige
+?        | Zoeken, maar zoek van achteren naar voren
+n, N     | Verder zoeken, n volgende, N vorige
+/<tekst> | Zoeken naar de tekst
 :noh     | Zet alle “gehighlighte” tekst uit
 
 

@@ -6,7 +6,7 @@ tags = ["windows", "active directory"]
 title = "098 - Active Directory Explorer"
 toc = false
 type = "post"
-updated = "2016-08-30"
+updated = "2016-09-06"
 spelling = 1
 +++
 
@@ -38,7 +38,7 @@ Meestal kun je meteen op \<enter> drukken om in te loggen met je eigen account
 en hoef je niets in te vullen.
 
 
-## Zoeken
+## Zoeken naar een gebruikerscode
 Je kunt niet zomaar gaan zoeken, je moet eerst een zoek opdracht samenstellen.
 Dat is even uitzoeken. In mijn geval werkte het zoeken naar een `account` als
 volgt. 
@@ -48,6 +48,14 @@ volgt.
 worden ingevuld. 
 Druk vervolgens op `Add`, en op `Search`.
 ![Schermafdruk](/img/098-adexplorer-2.jpg)
+
+
+## Zoeken naar gebruikersgroepen
+Onderstaand een voorbeeld van hoe naar gebruikersgroepen gezocht kan worden. Er
+wordt gezocht naar gebruikersgroepen die "Lias" bevatten.
+
+![Schermafdruk](/img/098-adexplorer-3.jpg)
+
 
 * * *
 
