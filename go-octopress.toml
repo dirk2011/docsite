@@ -67,7 +67,7 @@ post = "/:year/:slug/"
 
 [[menu.main]]
     Name = "Favorieten"
-    URL = "http://rasp164:1313/2015/203---favoriete-websites"
+    URL = "/2015/203---favoriete-websites"
     weight = 4
 
 [[menu.main]]
