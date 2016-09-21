@@ -3,14 +3,11 @@ date = "2016-07-28T00:00:00+02:00"
 draft = false
 title = "083 - .bashrc en bash"
 tags = ['raspberry', 'linux', '.bashrc', 'bash', 'image magick']
+categories = "Linux"
+updated = "2016-09-21"
 +++
 
 # .bashrc
-
-
-| Document info       |                   |
-|---------------------|-------------------|
-| Laatst bijgewerkt   | 2016-07-29        |
 
 
 Onderstaand een aantal van mijn instellingen in .bashrc.
@@ -48,10 +45,12 @@ export VISUAL="vi"
 
 ## history
 ```bash
-# history configuratie
-export HISTCONTROL=ignoreboth
-export HISTIGNORE=ls:ll:df:history:gs:gl
+# history configuratie, doel hou de lijst uniek
+HISTCONTROL=ignoreboth:erasedups
+HISTSIZE=1000
+HISTFILESIZE=1000
 ```
+
 
 ## autojump
 ```bash
