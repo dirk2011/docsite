@@ -3,7 +3,7 @@ date = "2016-07-28T00:00:00+02:00"
 draft = false
 title = "083 - .bashrc en bash"
 tags = ['raspberry', 'linux', '.bashrc', 'bash', 'image magick']
-categories = "Linux"
+categories = ["Linux"]
 updated = "2016-09-21"
 +++
 
@@ -77,16 +77,6 @@ of met
 
 # bash
 
-## Werken met history
-Wat opmerkingen over het werken met history op de bash prompt.
-
-* Type `history` om alle ingevoerde commando's terug te zien.
-* `!715` voert regel 715 opnieuw uit.
-* Met `ctrl-r` kan gezocht worden in de history. Handig om ingewikkelde, enige tijd terug uitgevoerde commando's, terug te
-vinden.
-* Indien de regel met een spatie begint wordt de regel niet toegevoegd aan de history.
-
 
 ![linux](/img/logo_linux.jpg)
-
 

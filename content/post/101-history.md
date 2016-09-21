@@ -4,8 +4,8 @@ date = "2016-09-20T20:44:39+02:00"
 draft = false
 spelling = 0
 tags = ["Linux", "history", "bash", ".bashrc"]
-title = "101 - History"
-toc = false
+title = "101 - Bash history"
+toc = true
 type = "post"
 updated = "2016-09-21"
 
@@ -74,7 +74,7 @@ Dus het opschonen is maar tijdelijk.
 
 
 ## Zoeken in de historie
-Doe `\<ctrl-r>` en begin te typen. Vervolgens wordt het laatste uitgevoerde
+Doe `<ctrl-r>` en begin te typen. Vervolgens wordt het laatste uitgevoerde
 commando getoond dat overeenkomt met de ingetypte tekst.
 
 
@@ -85,6 +85,7 @@ uitgevoerde commando's bijgehouden, en niet zo zeer een lijst van uitgevoerde
 commando's in de tijd.
 ```bash
 # history configuratie
+shopt -s histappend
 HISTCONTROL=ignoreboth:erasedups
 HISTSIZE=1000
 HISTFILESIZE=1000
