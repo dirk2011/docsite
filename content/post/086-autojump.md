@@ -4,7 +4,7 @@ draft = false
 title = "086 - Autojump, super eenvoudig cd met j"
 tags = ['autojump', 'bash', '.bashrc', 'raspberry', 'linux']
 categories = ['linux']
-updated = '2016-08-31'
+updated = '2016-09-29'
 spelling = 1
 +++
 
@@ -38,6 +38,14 @@ iedere cd en autojump bijgewerkt.
 . /usr/share/autojump/autojump.sh
 ```
 Vervolgens .bashrc opnieuw laden, of uitloggen en opnieuw inloggen.
+
+
+## Statistieken
+Autojump houdt de directory gegevens in een tekst database bij. De inhoud van
+deze database kan met het volgende commando getoond worden.
+```bash
+j --stat
+```
 
 
 ## Bronnen
