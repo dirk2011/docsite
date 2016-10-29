@@ -2,15 +2,12 @@
 date = "2015-03-02T00:00:00+02:00"
 draft = false
 title = "002 - Raspberry eerste stappen"
-tags = ['raspberry', 'linux']
+tags = ['Raspberry', 'linux']
 categories = ['Raspberry']
+updated = '2016-10-28'
 
 +++
 # Raspberry eerste stappen
-
-Doc info       | |
-| --- |--- |
- Eerste versie | 2015-06, 2015-03
 
 
 ## Inleiding
@@ -32,6 +29,7 @@ Hier kan onder andere:
 ## Expand filesystem
 Voor de optie expand filesystem uit in het menu. Hierdoor gaat de raspberry het hele geheugenkaartje gebruiken om
 bestanden op te slaan. 
+Met de lite versie van Raspbian is dit niet meer nodig!
 
 ## Internationalisation options / timezone
 Kies daarna voor internationalisation options. Kies vervolgens: change timezone. Zoek europe op, en daarna zoek
@@ -45,6 +43,10 @@ In de raspbian lite versie (2016-03) is ssh al geïnstalleerd.
 Kies nogmaals advanced options, kies memory spilt. Type de waarde 0 in. Hiermee wordt het geheugen voor weergave van
 het scherm op het minimum gezet, zodat een maximaal geheugen beschikbaar is voor de werking van de raspberry zelf.
 In de raspbian lite versie (2016-03) is dit niet meer nodig en staat de waarde al op 0.
+
+## Op het netwerk wachten
+Kies `Boot options`, kies vervolgens `Wait for Network at Boot` zodat tijdens het booten op de connectie 
+met het netwerk wordt gewacht, en bijvoorbeeld partities op een nas gemount worden.
 
 ## Reboot
 Start hierna de raspberry opnieuw op om alle wijzigingen door de voeren. Kies in het menu voor finish, en vervolgens

@@ -3,7 +3,7 @@ date = "2016-08-01T00:00:00+02:00"
 draft = false
 title = "087 - Excel VBA"
 tags = ['windows', 'excel', 'vba']
-updated = '2016-08-27'
+updated = '2016-10-27'
 +++
 
 # Excel VBA
@@ -34,6 +34,19 @@ For Each wb In Workbooks
    End If
 Next wb
 ```
+
+## Fouten negeren
+Soms wil je foutmeldingen tijdens de uitvoering van VBA negeren. Dat kan als
+volgt.
+```
+On Error Resume Next
+```
+De uitvoering van het programma loopt dan gewoon door. Neem vervolgens dit op.
+```
+On Error Goto 0
+```
+Hiermee worden fouten niet meer genegeerd. 
+
 * * * 
 
 

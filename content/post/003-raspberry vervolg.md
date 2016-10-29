@@ -4,14 +4,11 @@ draft = false
 title = "003 - Raspberry vervolg"
 tags = ['raspberry', 'linux']
 categories = ['Raspberry']
+updated = "2016-10-29"
 
 +++
 
 # Rasberry vervolg
-
- Document | |
---- | ---
- Bijgewerkt | 2015-08, 2016-03 |
 
 
 **Tip:**
@@ -98,6 +95,8 @@ Wolfram is een package die ik niet gebruik en nogal wat ruimte inneemt (450mb), 
 ```bash
 sudo apt-get purge wolfram-engine -y
 ```
+Bij de lite versie van Raspbian is Wolfram niet geïnstalleerd.
+
 
 ## X Sever en Desktop Manager verwijderen
 Deze programma's zijn nodig indien de grafische desktop gebruikt wordt. 
@@ -109,8 +108,9 @@ sudo apt-get remove --dry-run --auto-remove --purge libx11-.*
 Om het echt uit te voeren, verwijder “dry-run” uit de commando regel.
 Het verwijderen duurt even. 
 
-Sinds een tijdje (vanaf 2016?) is er ook een lite versie van raspbian, daar zit de grafisch omgeving niet in.
 Referentie: http://raspberrypi.stackexchange.com/questions/4745/how-to-uninstall-x-server-and-desktop-manager-when-running-as-headless-server
+
+Bij de lite versie van Raspbian is de grafische omgeving niet geïnstalleerd.
 
 
 ## Updates installeren
@@ -154,10 +154,13 @@ Uiteraard moet eerst een update zijn uitgevoerd.
 
 
 ## Opschonen
-Nadat de update klaar is kunnen tijdelijke bestanden worden opgeschoond met:
+In de directory `/var/cache/apt/archives` worden alle gedownloade packages opgeslagen. Dit kan nogal wat ruimte
+in beslag gaan nemen. Opruimen van deze bestanden gaat als volgt. 
 ```bash
 sudo apt-get clean
 ```
+
+Packages kunnen automatisch geïnstalleerd zijn, omdat ze nodig waren voor andere packages. 
 Verwijder niet langer benodigde packages met:
 ```bash
 sudo apt-get autoremove -y
@@ -311,9 +314,43 @@ tmux attach || tmux
 ```
 
 
-## ssh keys kopieren
-Om automatisch te kunnen inloggen kopieer de ssh key file. Voer dit commando uit vanaf de werkpc.
+## ssh keys kopiëren
+Om automatisch te kunnen inloggen kopieer de ssh key file. Voer dit commando uit vanaf de werk Pc.
 ```bash
 ssh-copy-id pi@192.168.3.28
 ```
+Indien er verschillende key files zijn, dan moet de juiste worden opgegeven, dat
+kan als volgt.
+```bash
+ssh-copy-id -i <key-file.pub> pi@192.168.3.28
+```
+
+## `ssh` server configureren
+Na het kopieren van de ssh key is het gebruik van wachtwoorden niet meer nodig, die schakel ik uit.
+`ssh` draait standaard op poort 22, die poort is gemakkelijk te vinden door hackers, daarom pas ik die aan. 
+Gebruiker root hoeft niet te kunnen inloggen, ook dat schakel ik uit.
+
+Ga na het configuratie bestand van ssh.
+```bash
+cd /etc/ssh
+```
+Maak een kopie van het configuratie bestand.
+```bash
+sudo cp sshd_config sshd_config.org
+```
+
+Pas de volgende instellingen aan, of voeg deze toe.
+
+instelling | toelichting
+---------- | -----------
+`PasswordAuthentication no` | Gebruik van wachtwoorden uitzetten
+`PermitRootLogin no`        | Voorkomen dat root kan inloggen
+`Port 50505`               | ssh proces andere poort laten gebruiken
+
+
+Na het doorvoeren van deze wijzigingen dient `ssh` opnieuw gestart te worden.
+```bash
+sudo service ssh restart
+```
+Log uit, en log opnieuw in zodat nu van poort 50505 gebruik wordt gemaakt.
 

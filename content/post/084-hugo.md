@@ -4,7 +4,7 @@ draft = false
 title = "084 - Hugo, static site generator"
 tags = ['hugo', 'linux', 'markdown']
 categories = ['hugo', 'raspberry']
-updated = "2016-08-31"
+updated = "2016-10-28"
 spelling = 1
 +++
 
@@ -39,6 +39,14 @@ Behalve deze programma package heeft Hugo niets nodig. Geweldig!
 ```bash
 sudo dpkg -i hugo_0.16-1_armhf.deb
 ```
+
+## Installeren `pygments`
+Voor het weergeven van voorbeeld code is `pygments` nodig. Installeer dat als
+volgt.
+```bash
+sudo pip install pygments
+```
+
 
 ## Website aanmaken
 Maak een nieuwe directory aan, om alle bestanden van de website in op te slaan.
@@ -86,6 +94,23 @@ hugo server --buildDrafts --theme=hyde-y --bind=0.0.0.0 -b=http://rasp166:1313
 
 ## Favicon
 Plaats in de map `/static` het bestand met als naam: `favicon.png`.
+
+
+## Website uploaden met `ncftpput`
+Installeer het programma `ncftpput` om de gemaakte website naar een externe
+webserver te uploaden.
+```bash
+sudo apt-get install ncftp
+```
+
+Een upload script kan er dan bijvoorbeeld als volgt uit zien.
+```bash
+# upload public naar mijndomein
+
+cd public
+ncftpput -R -v -u "user" -p "wachtwoord" ftp.voorbeeld.com /public/sites/www.voorbeeld.com ./
+cd ..
+```
 
 
 ## Conclusie
