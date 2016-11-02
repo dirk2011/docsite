@@ -4,7 +4,7 @@ draft = false
 title = "021 - Vim, vi improved, een super editor"
 tags = ['vim', 'linux', 'markdown', 'raspberry']
 categories = ['linux']
-updated = '2016-08-31'
+updated = '2016-10-29'
 spelling = 1
 
 +++
@@ -466,11 +466,17 @@ Bron: https://github.com/scrooloose/nerdtree
 
 
 
-### Jedi-vim plugin
+### Jedi Vim plugin
 
 Met deze plugin wordt het programmeren van python een stuk eenvoudiger. Het kan
 o.a. docstrings van objecten tonen, je kunt naar definities springen, en biedt
 autocompletion. 
+
+Het vereist de Jedi plugin voor Vim en de installatie van de python module Jedi.
+Installeer deze laatste als volgt.
+```bash
+sudo pip install jedi
+```
 
 Opdracht   | Verklaring
 ---------- | ----------

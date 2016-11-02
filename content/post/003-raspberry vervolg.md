@@ -12,7 +12,8 @@ updated = "2016-10-29"
 
 
 **Tip:**
-Onderstaand edit ik verschillende bestanden. Het is altijd verstandig om voordat een bestand wordt aangepast hiervan een kopie te maken!
+Onderstaand edit ik verschillende bestanden. Het is altijd verstandig om voordat
+een bestand wordt aangepast hiervan een kopie te maken!
 
 
 ## Todo
@@ -24,13 +25,14 @@ Wijzig het wachtwoord van de gebruiker pi waarmee nu is ingelogd. Doe:
 ```bash
 passwd
 ```
-Voer vervolgens eerst oude, en daarna 2x nieuwe wachtwoord in.
-Het is nog beter om een nieuwe gebruiker aan te maken, ipv door te gaan met de gebruiker pi.
+Voer vervolgens eerst oude, en daarna 2x nieuwe wachtwoord in.  Het is nog beter
+om een nieuwe gebruiker aan te maken, ipv door te gaan met de gebruiker pi.
 
 
-## Hostnaam wijzigen
-Hier leg ik uit hoe de hostnaam gewijzigd kan worden, De naam van de computer. Nu niet vanuit het configuratie menu, maar handmatig. 
-Sinds een tijdje gaat dat echter prima vanuit het configuratie menu (raspi-config).
+## Host naam wijzigen
+Hier leg ik uit hoe de hostnaam gewijzigd kan worden, De naam van de computer.
+Nu niet vanuit het configuratie menu, maar handmatig.  Sinds een tijdje gaat dat
+echter prima vanuit het configuratie menu (raspi-config).
 Hiervoor moeten de volgende bestanden moeten ge-edit worden, doe:
 ```bash
 vi /etc/hostname
@@ -41,20 +43,21 @@ Sla het bestand op en doe vervolgens:
 vi /etc/hosts
 ```
 
-Zorg ervoor dat hostname in beide bestanden wordt aangepast, en dat deze gelijk is!
-Voer nu de wijzigingen door, draai script:
+Zorg ervoor dat hostname in beide bestanden wordt aangepast, en dat deze gelijk
+is!  Voer nu de wijzigingen door, draai script:
 ```bash
 sudo /etc/init.d/hostname.sh
 ```
 
 Indien een foutmelding volgt, voer deze stap dan nogmaals uit.
-Start een nieuwe shell om te kijken of hostname nu is gewijzigd, doe:
+Start een nieuwe shell om te kijken of host naam nu is gewijzigd, doe:
 ```bash
 bash
 ```
 
 **LET OP!
-Na wijzigingen hostname raspberry rebooten. Koude reboot doen (stroom eraf) als hij niet goed opstart!**
+Na wijzigingen host naam Raspberry rebooten. Koude reboot doen (stroom eraf) als
+hij niet goed opstart!**
 
 
 ## Grafische desktop starten
@@ -62,12 +65,13 @@ Het starten van de grafische desktop is erg eenvoudig, doe:
 ```bash
 startx
 ```
-En meer komt er niet bij kijken om een grafische werkomgeving te krijgen op de raspberry.
+En meer komt er niet bij kijken om een grafische werkomgeving te krijgen op de Raspberry.
 
 
-## ll commando activeren
-ls, geeft niet zoveel informatie over bestanden. Meer informatie geeft het commando: ls -l, daarom maak ik het "commando" ll aan door hiervoor een alias te maken.
-Ga naar de home map van de gebruiker, doe:
+## `ll` commando activeren
+ls, geeft niet zoveel informatie over bestanden. Meer informatie geeft het
+commando: ls -l, daarom maak ik het "commando" ll aan door hiervoor een alias te
+maken.  Ga naar de home map van de gebruiker, doe:
 ```bash
 cd
 ```
@@ -76,12 +80,15 @@ Edit bestand .bashrc, doe:
 vi .bashrc
 ```
 
-Zoek naar de sectie waar alias commando's staan. Haal het commentaar (een hekje) weg dat er voor staat. Voeg aan ls de opties toe: ia, zodat het er uit ziet als onderstaand:
+Zoek naar de sectie waar alias commando's staan. Haal het commentaar (een hekje)
+weg dat er voor staat. Voeg aan ls de opties toe: ia, zodat het er uit ziet als
+onderstaand:
 ```bash
 alias ll='ls -lia'
 ```
 
-Start nu een nieuwe shell om de gewijzigde .bashrc te activeren, en probeer het nieuwe commando ll uit.
+Start nu een nieuwe shell om de gewijzigde .bashrc te activeren, en probeer het
+nieuwe commando ll uit.
 
 Herladen van de van .bashrc is ook mogelijk voor het huidige venster, doe:
 ```bash
@@ -90,8 +97,9 @@ source .bashrc
 ```
 
 ## Wolfram verwijderen
-Met Wolfram kunnen mathematische berekeningen worden uitgevoerd.
-Wolfram is een package die ik niet gebruik en nogal wat ruimte inneemt (450mb), dus die verwijder ik:
+Met Wolfram kunnen mathematische berekeningen worden uitgevoerd.  Wolfram is een
+package die ik niet gebruik en nogal wat ruimte inneemt (450mb), dus die
+verwijder ik:
 ```bash
 sudo apt-get purge wolfram-engine -y
 ```
@@ -99,8 +107,8 @@ Bij de lite versie van Raspbian is Wolfram niet geïnstalleerd.
 
 
 ## X Sever en Desktop Manager verwijderen
-Deze programma's zijn nodig indien de grafische desktop gebruikt wordt. 
-Indien dat niet het geval is kunnen ze weg. Ze nemen nogal wat schijfruimte ingebruik.
+Deze programma's zijn nodig indien de grafische desktop gebruikt wordt.  Indien
+dat niet het geval is kunnen ze weg. Ze nemen nogal wat schijfruimte ingebruik.
 Proef draaien gaat als volgt:
 ```bash
 sudo apt-get remove --dry-run --auto-remove --purge libx11-.*
@@ -126,7 +134,9 @@ Of doe alles in één keer achter elkaar aan, met:
 ```bash
 sudo apt-get update && sudo apt-get -y upgrade
 ```
-Toelichting: opdracht 2 wordt alleen opgestart als opdracht 1 is gelukt, bovendien wordt niet gevraagd of de updates geïnstalleerd moeten worden, dat gaat dan automatisch.
+Toelichting: opdracht 2 wordt alleen opgestart als opdracht 1 is gelukt,
+bovendien wordt niet gevraagd of de updates geïnstalleerd moeten worden, dat
+gaat dan automatisch.
 
 Het bijwerken van de systeem software (de kernel) gaat als volgt:
 ```bash
@@ -138,7 +148,8 @@ uname -a
 ```
 
 ## Updaten –dry-run
-Om te zien wat er geïnstalleerd gaat worden kan apt-get proef gedraaid worden, dat gaat als volgt.
+Om te zien wat er geïnstalleerd gaat worden kan apt-get proef gedraaid worden,
+dat gaat als volgt.
 ```bash
 sudo apt-get upgrade --dry-run
 Reading package lists... Done
@@ -154,18 +165,20 @@ Uiteraard moet eerst een update zijn uitgevoerd.
 
 
 ## Opschonen
-In de directory `/var/cache/apt/archives` worden alle gedownloade packages opgeslagen. Dit kan nogal wat ruimte
-in beslag gaan nemen. Opruimen van deze bestanden gaat als volgt. 
+In de directory `/var/cache/apt/archives` worden alle gedownloade packages
+opgeslagen. Dit kan nogal wat ruimte in beslag gaan nemen. Opruimen van deze
+bestanden gaat als volgt. 
 ```bash
 sudo apt-get clean
 ```
 
-Packages kunnen automatisch geïnstalleerd zijn, omdat ze nodig waren voor andere packages. 
-Verwijder niet langer benodigde packages met:
+Packages kunnen automatisch geïnstalleerd zijn, omdat ze nodig waren voor andere
+packages.  Verwijder niet langer benodigde packages met:
 ```bash
 sudo apt-get autoremove -y
 ```
-Datum 2015-08-22. Na het bijwerken van de software, opschonen etc. geeft df -h nu het volgende over het schijf gebruik. 
+Datum 2015-08-22. Na het bijwerken van de software, opschonen etc. geeft df -h
+nu het volgende over het schijf gebruik. 
 ```bash
 df -h
 
@@ -189,7 +202,8 @@ Eventueel installeren gaat als onderstaand.
 ```bash
 sudo apt-get install rpi-update
 ```
-Maar in mijn geval was het niet nodig, het programma was er al. Uitvoeren als onderstaand.
+Maar in mijn geval was het niet nodig, het programma was er al. Uitvoeren als
+onderstaand.
 ```bash
 sudo rpi-update
 ```
@@ -238,8 +252,8 @@ Nadat de update gelukt is dient de raspberry opnieuw te worden opgestart.
 
 
 ## Vast ip adres
-Om de Raspberry op het eigen netwerk te kunnen terugvinden is een vast ip adres wel handig.
-Edit het bestand interfaces, doe:
+Om de Raspberry op het eigen netwerk te kunnen terugvinden is een vast ip adres
+wel handig.  Edit het bestand interfaces, doe:
 ```bash
 sudo vi /etc/network/interfaces
 ```
@@ -256,8 +270,11 @@ network 192.168.1.0
 broadcast 192.168.1.255
 gateway 192.168.1.1
 ```
-Bovenstaand krijgt de Raspberry bijvoorbeeld het vaste adres:  192.168.1.115, en wordt er van uitgegaan dan het eigen netwerk begint met 192.168.1.
-Indien in deze wijziging iets fout gaat, is de kans groot dat niet meer remote kan worden ingelogd. Aansluiten van een scherm en toetsenbord is dan de enige weg om dit te herstellen.
+Bovenstaand krijgt de Raspberry bijvoorbeeld het vaste adres:  192.168.1.115, en
+wordt er van uitgegaan dan het eigen netwerk begint met 192.168.1.  Indien in
+deze wijziging iets fout gaat, is de kans groot dat niet meer remote kan worden
+ingelogd. Aansluiten van een scherm en toetsenbord is dan de enige weg om dit te
+herstellen.
 
 **Heb nu eigen dhcp/dns server draaien, deze stap is niet meer nodig.**
 
@@ -270,17 +287,21 @@ sudo reboot
 
 
 ## Bestand hosts configureren
-In het bestand /etc/hosts staan de andere computers die zich in het eigen netwerk bevinden en een vast ip adres hebben. Het is alleen maar nuttig die computers te noemen 
-waar de raspberry bij moet kunnen, denk aan bijvoorbeeld een nas.
+In het bestand /etc/hosts staan de andere computers die zich in het eigen
+netwerk bevinden en een vast ip adres hebben. Het is alleen maar nuttig die
+computers te noemen waar de raspberry bij moet kunnen, denk aan bijvoorbeeld een
+nas.
 
 **Heb nu eigen dhcp/dns server draaien, deze stap is niet meer nodig.**
 
 
 ## Extra software installeren
-Installeer eventueel onderstaande extra en ook handige software.
-Vim is een uitgebreidere variant van vi. Mc is een soort Norton Commander. Met tmux kunnen meerdere werk sessie's gebruikt worden, enorm handig.
+Installeer eventueel onderstaande extra en ook handige software.  Vim is een
+uitgebreidere variant van vi. `vim-nox` zorgt ervoor dat Vim python ondersteunt.
+mc is een soort norton commander. met tmux kunnen meerdere werk sessie's
+gebruikt worden, enorm handig.  Git is een programma voor versie beheer.
 ```bash
-sudo apt-get install -y vim mc tmux
+sudo apt-get install -y vim vim-nox mc tmux git
 ```
 
 Voor python en postgres zijn deze toevoegingen handig:
@@ -293,9 +314,9 @@ Een “lichter” alternatief voor apache voor hosten websites:
 sudo apt-get install -y  nginx
 ```
 
-Met python-pip kunnen python extensies geïnstalleerd worden.
-Postgres is een geweldige open source database. Ik gebruik (febr. 2015) versie 9.1.
-Met de package python-psycopg2, kan python gebruik maken van de postgres database.
+Met python-pip kunnen python extensies geïnstalleerd worden.  Postgres is een
+geweldige open source database. Ik gebruik (febr. 2015) versie 9.1.  Met de
+package python-psycopg2, kan python gebruik maken van de postgres database.
 Nginx is een webserver.
 
 
@@ -305,17 +326,22 @@ Voeg dit toe aan .bashrc, om vim de standaard editor te maken:
 export EDITOR="vi"
 export VISUAL="vi"
 ```
+Nadat Vim is geïnstalleerd, haal ik van Github mijn Vim configuratie op.
 
-## tmux
-Met tmux kunnen meerdere schermen cq. sessies gebruiken worden. Erg handig, en programma's in een remote sessie blijven doordraaien zelfs als de verbinding met de computer wegvalt. 
-Voeg daarom onderstaande toe aan .bashrc, na inloggen kom je dan automatisch in een lopende sessie terecht.
+
+## Tmux
+Met `tmux` kunnen meerdere schermen cq. sessies gebruiken worden. Erg handig, en
+programma's in een remote sessie blijven doordraaien zelfs als de verbinding met
+de computer wegvalt.  Voeg daarom onderstaande toe aan `.bashrc`, na inloggen kom
+je dan automatisch in een lopende sessie terecht.
 ```bash
 tmux attach || tmux
 ```
 
 
 ## ssh keys kopiëren
-Om automatisch te kunnen inloggen kopieer de ssh key file. Voer dit commando uit vanaf de werk Pc.
+Om automatisch te kunnen inloggen kopieer de ssh key file. Voer dit commando uit
+vanaf de werk Pc.
 ```bash
 ssh-copy-id pi@192.168.3.28
 ```
@@ -326,9 +352,10 @@ ssh-copy-id -i <key-file.pub> pi@192.168.3.28
 ```
 
 ## `ssh` server configureren
-Na het kopieren van de ssh key is het gebruik van wachtwoorden niet meer nodig, die schakel ik uit.
-`ssh` draait standaard op poort 22, die poort is gemakkelijk te vinden door hackers, daarom pas ik die aan. 
-Gebruiker root hoeft niet te kunnen inloggen, ook dat schakel ik uit.
+Na het kopieren van de ssh key is het gebruik van wachtwoorden niet meer nodig,
+die schakel ik uit.  `ssh` draait standaard op poort 22, die poort is
+gemakkelijk te vinden door hackers, daarom pas ik die aan.  Gebruiker root hoeft
+niet te kunnen inloggen, ook dat schakel ik uit.
 
 Ga na het configuratie bestand van ssh.
 ```bash
