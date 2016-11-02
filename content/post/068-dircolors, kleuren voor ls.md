@@ -6,13 +6,13 @@ tags = ["linux", "raspberry", "ls", "dircolors"]
 title = "068 - dircolors, ls kleuren configureren"
 toc = false
 type = "post"
-updated = "2016-08-30"
+updated = "2016-11-02"
 spelling = 1
 
 +++
 
 
-## Ls
+## `ls`
 
 Met `ls` kun je de inhoud van een directory op het scherm weergeven. `ls`
 gebruikt kleuren voor de weergave, het is de bedoeling dat daarmee de
@@ -43,8 +43,8 @@ Neem dit commando op in het opstart bestand van bash: `.bashrc`.
 
 ## Een voorbeeld
 Het item `OTHER_WRITABLE` heeft betrekking op directory's die voor anderen
-muteerbaar zijn. Dit item heeft de volgende kleuren code gekregen `30;42`. In
-het bestand ziet de regel er dan als volgt uit.
+muteerbaar zijn. Dit item heeft de volgende kleuren code gekregen `30;42`. De
+waarde was `34:42` In het bestand ziet de regel er dan als volgt uit.
 ```bash
 OTHER_WRITABLE 30;42 # dir that is other-writable (o+w) and not sticky
 ```
